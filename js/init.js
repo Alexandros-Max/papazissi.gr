@@ -24,6 +24,39 @@
       },
     });
 
+
+    // Product Single Gallery
+    const ProductThumb = new Swiper(".product-single-thumb .swiper", {
+      spaceBetween: 30,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+      // Breakpoints
+      breakpoints: {
+          0: {
+              spaceBetween: 10,
+          },
+          768: {
+              spaceBetween: 30,
+          },
+      },
+    })
+    const ProductSingle = new Swiper(".product-single-slide .swiper", {
+      spaceBetween: 0,
+      navigation: {
+          nextEl: ".product-single-thumb .swiper-button-next",
+          prevEl: ".product-single-thumb .swiper-button-prev",
+      },
+
+      thumbs: {
+          swiper: ProductThumb,
+      },
+    })
+
+
+
+
+
     // Product/Blog Swiper Slider INIT
     const prodSlider = ()=>{
       let prodSliders = document.querySelectorAll('.vitrina-product')
