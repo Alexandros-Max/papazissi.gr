@@ -366,6 +366,12 @@ section{
   vertical-align: middle;
   transform: translate3d(0, 0, 0);
 }
+.checkbox-wrapper .cbx span a {
+  color: var(--color-1);
+}
+.checkbox-wrapper .cbx span a:hover {
+  color: var(--color-3);
+}
 .checkbox-wrapper .cbx span:first-child {
   position: relative;
   width: 18px;
@@ -424,12 +430,6 @@ section{
   50% {
     transform: scale(0.9);
   }
-}
-.checkboxX label {
-  margin-bottom: 0;
-}
-.checkboxX a {
-  color: inherit;
 }
 .textimg-section .row{
   align-items: center;
