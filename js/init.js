@@ -5,11 +5,6 @@
     new WOW().init();
     }
 
-    // EasyZoom INIT
-    if ($('.easyzoom').length) {
-        var $easyzoom = $('.easyzoom').easyZoom();
-    }
-
 
     /*== Product Image Zoom ==*/
     function isTouchEnabled() { return !!document.createTouch; }

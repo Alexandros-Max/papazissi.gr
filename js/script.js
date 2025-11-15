@@ -54,6 +54,19 @@
 
     });
 
+    // Register Form company info input - show/hide
+    if ($('.user-type-selector').length){
+        $('.user-type-selector').change(function(){
+            if ($("#user_company").is(':checked')){
+                $('.company-info').removeClass('d-none');
+            } else {
+                $('.company-info').addClass('d-none');
+            }
+    
+        });
+    }
+
+
     
     // Form input helper - show/hide
     $('.form-note').click(function(){
