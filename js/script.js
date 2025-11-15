@@ -54,6 +54,11 @@
 
     });
 
+    
+    // Form input helper - show/hide
+    $('.form-note').click(function(){
+        $(this).toggleClass("active");
+    });
 
 
 

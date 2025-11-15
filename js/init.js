@@ -11,7 +11,11 @@
     }
 
 
-
+    /*== Product Image Zoom ==*/
+    function isTouchEnabled() { return !!document.createTouch; }
+    if ($('.zoom-image-hover').length && (isTouchEnabled) && ($(window).outerWidth() > 1199)) {
+        $('.zoom-image-hover').zoom();
+    }
 
 
     // Search Filters INIT
@@ -27,22 +31,22 @@
 
     // Product Single Gallery
     const ProductThumb = new Swiper(".product-single-thumb .swiper", {
-      spaceBetween: 30,
+      spaceBetween: 16,
       slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,
       // Breakpoints
       breakpoints: {
           0: {
-              spaceBetween: 10,
+              spaceBetween: 8,
           },
           768: {
-              spaceBetween: 30,
+              spaceBetween: 16,
           },
       },
     })
     const ProductSingle = new Swiper(".product-single-slide .swiper", {
-      spaceBetween: 0,
+      spaceBetween: 20,
       navigation: {
           nextEl: ".product-single-thumb .swiper-button-next",
           prevEl: ".product-single-thumb .swiper-button-prev",
