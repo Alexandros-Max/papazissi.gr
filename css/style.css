@@ -1247,7 +1247,7 @@ footer .list-social a {
 }
 /* Overlay CSS - Cart overlay */
 .overlay-body.cart-body {
-  max-height: calc(100vh - 300px);
+  max-height: calc(100vh - 350px);
 }
 .single-cart-prod {
   display: flex;
@@ -1297,6 +1297,7 @@ footer .list-social a {
   flex-direction: column;
   gap: 20px;
   position: relative;
+  border-top: 1px solid var(--color-2);
 }
 .cart-sum {
   width: 100%;
@@ -1305,7 +1306,7 @@ footer .list-social a {
 }
 .cart-checkout-btn {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
 }
 .cart-checkout-btn .btn {
@@ -1319,10 +1320,62 @@ footer .list-social a {
   font-weight: 600;
   font-size: 18px;
 }
+/* Shipping Time */
+.shipping-time {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid var(--color-2);
+  padding: 20px 0 10px;
+}
+.shipping-time .dz-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.shipping-time .dz-icon lord-icon {
+  width: 100%;
+  height: 100%;
+}
+.shipping-time img {
+  margin-right: 20px;
+}
+.shipping-time .shipping-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 100%;
+  flex: 1 1 auto;
+}
+.shipping-time .title {
+  font-weight: 500;
+}
+.shipping-time .progress {
+  border-radius: 10px;
+  height: 20px;
+}
+.shipping-time .progress .progress-bar {
+  background-color: var(--color-1);
+}
 @media screen and (max-width:767px) {
+  .cart-checkout-btn {
+    flex-direction: column;
+  }
   .overlay-body.cart-body {
     max-height: calc(100vh - 250px);
-}
+  }
+  .shipping-time .dz-icon {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .shipping-time .title {
+    font-size: 13px;
+  }
 }
 /* Overlay CSS - Account overlay */
 .overlay-body.form-container {
@@ -2329,18 +2382,34 @@ pointer-events: all;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 12px;
 }
 .product-single-list li {
   display: flex;
-  flex-wrap: wrap;
   gap: 8px 16px;
   width: 100%;
 }
 .product-single-list li strong {
   width: 250px;
+  min-width: 250px;
 }
 .product-single-list li + li {
   border-top: 1px solid var(--color-4);
-  padding-top: 8px;
+  padding-top: 12px;
+}
+.availability-yes {
+  color: var(--color-green);
+}
+.availability-no {
+  color: var(--color-delete);
+}
+@media screen  and (max-width:767px){
+  .product-single-list li {
+    flex-direction: column;
+  }
+  .product-single-list li strong {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
