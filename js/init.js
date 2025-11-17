@@ -75,16 +75,16 @@
               slidesPerView: 3,
             },
             992: {
-              slidesPerView: 4,
+              slidesPerView: 3,
             },
             1200: {
               slidesPerView: 4,
             },
             1400: {
-              slidesPerView: 5,
+              slidesPerView: 4,
             },
             1400: {
-              slidesPerView: 6,
+              slidesPerView: 5,
             },
           }
         });	
