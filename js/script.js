@@ -62,10 +62,49 @@
             } else {
                 $('.company-info').addClass('d-none');
             }
-    
         });
     }
 
+    
+    // Price Range Filter
+	var priceslider = function(){
+		if($("#slider-tooltips").length > 0 ) {
+			var tooltipSlider = document.getElementById('slider-tooltips');
+			
+			var formatForSlider = {
+				from: function (formattedValue) {
+					return Number(formattedValue);
+				},
+				to: function(numericValue) {
+					return Math.round(numericValue);
+				}
+			};
+
+			noUiSlider.create(tooltipSlider, {
+				start: [0, 400],
+				connect: true,
+				format: formatForSlider,
+				tooltips: [wNumb({decimals: 1}), true],
+				range: {
+					'min': 0,
+					'max': 400
+				}
+			});
+			var formatValues = [
+				document.getElementById('slider-margin-value-min'),
+				document.getElementById('slider-margin-value-max')
+			];
+			tooltipSlider.noUiSlider.on('update', function (values, handle, unencoded) {
+				formatValues[0].innerHTML = "Από: " + values[0] + "€";
+				formatValues[1].innerHTML = "Έως: " + values[1] + "€";
+			});
+		}
+	}
+    
+    
+    jQuery(document).ready(function() {
+        priceslider();
+    });
 
     
     // Form input helper - show/hide
