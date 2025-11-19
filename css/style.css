@@ -1912,6 +1912,9 @@ footer .list-social a {
 .form-container {
   padding-left: 32px;
   padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 .common-form {
   display: flex;
@@ -2857,84 +2860,50 @@ pointer-events: all;
   }
 }
 /* ------------ Hero Slider Style ------------ */
-.hero-section {
-  padding: 0;
-  overflow: hidden;
-}
-.hero-section .container-fluid {
-  padding: 0;
-  max-width: 100%;
-}
 .hero-swiper {
   position: relative;
   overflow: hidden;
-  padding: 16px;
-  margin: -16px;
 }
 .hero-single {
-  display: block;
+  display: flex;
   position: relative;
   overflow: hidden;
   width: 100%;
   height: auto;
-  aspect-ratio: 20/7;
+  flex-direction: row;
+  align-items: center;
 }
-.hero-single img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.hero-single .hero-image {
+  border-radius: var(--border-radius-big);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+.hero-single .hero-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 .hero-single .hero-single-content {
-  position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  background-color: rgba(0,0,0,.4);
-  backdrop-filter: blur(4px);
-  color: white;
   gap: 16px;
 }
 .hero-nav {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  bottom: 32px;
+  left: 32px;
   z-index: 1;
-  width: 120%;
+  width: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px;
+  padding: 0;
+  gap: 16px;
   pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
   transition: all .4s ease-in-out;
-}
-.hero-swiper:hover .hero-nav {
-  width: calc(100% - 32px);
-  opacity: 1;
-  visibility: visible;
-}
-.hero-nav .swiper-button-next, 
-.hero-nav .swiper-button-prev {
-  pointer-events: all;
-  color: white;
-  border-color: white;
-  transition: all .4s ease-in-out;
-}
-.hero-nav .swiper-button-next:hover, 
-.hero-nav .swiper-button-prev:hover {
-  color: white;
-  border-color: var(--color-1);
-  background-color: var(--color-1);
 }
 .hero-nav .swiper-button-disabled {
   display: none;
