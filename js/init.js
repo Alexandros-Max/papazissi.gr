@@ -12,6 +12,49 @@
         $('.zoom-image-hover').zoom();
     }
 
+    // Hero Slider INIT
+    var swiper = new Swiper(".hero-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      navigation: {
+        nextEl: ".hero-next",
+        prevEl: ".hero-prev",
+      },
+    });
+
+    // Author Slider INIT
+    var swiper = new Swiper(".author-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      navigation: {
+        nextEl: ".author-next",
+        prevEl: ".author-prev",
+      },
+    });
+    const AuhtorThumb = new Swiper(".author-thumb-slider .swiper", {
+      spaceBetween: 0,
+      slidesPerView: 3,
+      centeredSlides: true,
+      loop: true,
+      watchSlidesProgress: true,
+    })
+    const AuhtorSingle = new Swiper(".author-single-slider .swiper", {
+      spaceBetween: 40,
+      slidesPerView: 1,
+      loop: true,
+      centeredSlides: true,
+      navigation: {
+        nextEl: ".author-next",
+        prevEl: ".author-prev",
+      },
+
+      thumbs: {
+          swiper: AuhtorThumb,
+      },
+    })
+
 
     // Search Filters INIT
     var swiper = new Swiper(".search-filters .swiper", {

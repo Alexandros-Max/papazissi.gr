@@ -282,6 +282,7 @@ section{
   background: var(--gradient-transparent);
   border-radius: var(--border-radius-big);
   box-shadow: var(--box-shadow);
+  overflow: hidden;
 }
 .section-padding{
   padding-top: 32px;
@@ -1664,6 +1665,13 @@ footer .list-social a {
   font-size: 14px;
   font-weight: 300;
   color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  height: 16px;
+  line-height: 16px;
 }
 .prod-content .prod-title {
   overflow: hidden;
@@ -1750,6 +1758,7 @@ footer .list-social a {
   top: 10px;
   left: 10px;
   max-width: calc(100% - 60px);
+  font-size: 14px;
 }
 .prod-tag-container .prod-tag {
   padding: 4px 8px;
@@ -1874,6 +1883,7 @@ footer .list-social a {
 .swiper-button-next.swiper-button-disabled, 
 .swiper-button-prev.swiper-button-disabled {
   opacity: 0.2;
+  pointer-events: none;
 }
 .vitrina-section .swiper {
   overflow: hidden;
@@ -2845,4 +2855,199 @@ pointer-events: all;
   .overlay-filters-container .overlay-body {
     max-height: unset;
   }
+}
+/* ------------ Hero Slider Style ------------ */
+.hero-section {
+  padding: 0;
+  overflow: hidden;
+}
+.hero-section .container-fluid {
+  padding: 0;
+  max-width: 100%;
+}
+.hero-swiper {
+  position: relative;
+  overflow: hidden;
+  padding: 16px;
+  margin: -16px;
+}
+.hero-single {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 20/7;
+}
+.hero-single img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hero-single .hero-single-content {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,.4);
+  backdrop-filter: blur(4px);
+  color: white;
+  gap: 16px;
+}
+.hero-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease-in-out;
+}
+.hero-swiper:hover .hero-nav {
+  width: calc(100% - 32px);
+  opacity: 1;
+  visibility: visible;
+}
+.hero-nav .swiper-button-next, 
+.hero-nav .swiper-button-prev {
+  pointer-events: all;
+  color: white;
+  border-color: white;
+  transition: all .4s ease-in-out;
+}
+.hero-nav .swiper-button-next:hover, 
+.hero-nav .swiper-button-prev:hover {
+  color: white;
+  border-color: var(--color-1);
+  background-color: var(--color-1);
+}
+.hero-nav .swiper-button-disabled {
+  display: none;
+}
+/* ------------ Author Slider Style ------------ */
+.author-nav {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  pointer-events: none;
+  transition: all .4s ease-in-out;
+}
+.author-swiper:hover .author-nav {
+  width: calc(100% - 32px);
+  opacity: 1;
+  visibility: visible;
+}
+.hero-nav .swiper-button-disabled {
+  display: none;
+}
+.vitrina-title.author-title {
+  height: fit-content;
+  align-items: center;
+}
+.vitrina-title.author-title .section-title {
+  align-items: center;
+}
+.author-thumb-slider {
+  overflow: hidden;
+  width: 300px;
+  padding: 30px 0;
+  max-width: 100%;
+  margin: 32px auto;
+}
+.author-single-thumb-item {
+  scale: 1;
+  background-color: black;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+.author-single-thumb-item.swiper-slide-active {
+  scale: 1.4;
+  z-index: 1;
+  border: 4px solid transparent;
+  cursor: default;
+  border-color: var(--color-1);
+}
+.author-single-thumb-item img {
+  border-radius: 100%;
+  opacity: .6;
+  filter: blur(1px);
+}
+.author-single-thumb-item.swiper-slide-active img{
+  opacity: 1;
+  filter: none;
+}
+.author-single-slider {
+  overflow: hidden;
+}
+.author-single-slider .swiper-slide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 32px;
+  margin: 0;
+}
+.author-single-slider .auhtor-book-listing{ 
+  align-items: center;
+}
+.auhtor-book-listing .product-card {
+  flex-direction: row;
+  align-items: center;
+}
+.auhtor-book-listing .product-card .prod-image {
+  width: 30%;
+}
+.prod-row-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auhtor-book-listing .prod-sku,
+.auhtor-book-listing .prod-title {
+  -webkit-line-clamp: unset;
+  height: fit-content;
+}
+.auhtor-book-listing .prod-footer {
+  margin-top: 0;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+.auhtor-book-listing .prod-tag-container {
+  position: static;
+  max-width: 100%;
+}
+.auhtor-book-listing .btn {
+  font-size: 14px;
+}
+.auhtor-book-listing .product-single-wishlist .mn-btn-group {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.auhtor-book-listing .product-single-wishlist lord-icon {
+  width: 100%;
+  height: 100%;
 }
