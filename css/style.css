@@ -1628,7 +1628,10 @@ footer .list-social a {
 }
 /* ------------ Product card ------------ */
 .product-card {
-  display: block;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  gap: 16px;
   overflow: hidden;
   border-radius: var(--border-radius-main);
   background-color: white;
@@ -1652,7 +1655,6 @@ footer .list-social a {
   scale: 1.05;
 }
 .prod-content {
-  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
