@@ -24,36 +24,22 @@
     });
 
     // Author Slider INIT
-    var swiper = new Swiper(".author-swiper", {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      loop: true,
+    var swiper = new Swiper(".author-vitrina", {
+      slidesPerView: 2,
+      spaceBetween: 32,
       navigation: {
         nextEl: ".author-next",
         prevEl: ".author-prev",
+      },
+      breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          1600: {
+            slidesPerView: 2,
+          },
       },
     });
-    const AuhtorThumb = new Swiper(".author-thumb-slider .swiper", {
-      spaceBetween: 0,
-      slidesPerView: 3,
-      centeredSlides: true,
-      loop: true,
-      watchSlidesProgress: true,
-    })
-    const AuhtorSingle = new Swiper(".author-single-slider .swiper", {
-      spaceBetween: 40,
-      slidesPerView: 1,
-      loop: true,
-      centeredSlides: true,
-      navigation: {
-        nextEl: ".author-next",
-        prevEl: ".author-prev",
-      },
-
-      thumbs: {
-          swiper: AuhtorThumb,
-      },
-    })
 
 
     // Search Filters INIT
@@ -116,12 +102,6 @@
           breakpoints: {
             768: {
               slidesPerView: 3,
-            },
-            992: {
-              slidesPerView: 3,
-            },
-            1200: {
-              slidesPerView: 4,
             },
             1400: {
               slidesPerView: 4,
