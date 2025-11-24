@@ -2671,6 +2671,7 @@ pointer-events: all;
 }
 .product-single-title {
   max-width: 50ch;
+  line-height: 1.6;
 }
 .product-single-desc {
   color: var(--color-3);
