@@ -2683,7 +2683,7 @@ pointer-events: all;
   gap: 8px;
 }
 .authors-list .single-author .single-author-image {
-  width: 80px;
+  width: 70px;
   border-radius: 100%;
   overflow: hidden;
   background-color: black;
