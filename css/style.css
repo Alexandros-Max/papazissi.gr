@@ -289,7 +289,7 @@ section{
   padding-bottom: 32px;
 }
 .container-fluid{
-  width: 1600px;
+  width: 2000px;
   max-width: calc(100% - 32px);
   margin-left: auto;
   margin-right: auto;
