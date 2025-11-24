@@ -1749,9 +1749,9 @@ footer .list-social a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   position: absolute;
-  top: 10px;
+  top: 8px;
   right: -100%;
   opacity: 0;
   visibility: hidden;
@@ -1759,7 +1759,7 @@ footer .list-social a {
   transition: all .4s ease-in-out;
 }
 .product-card:hover .prod-action-btn-container {
-  right: 10px;
+  right: 8px;
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -1806,6 +1806,41 @@ footer .list-social a {
 .prod-tag-container .prod-tag.new {
   background-color: var(--color-3);
   color: white;
+}
+.special-vitrina .product-card {
+  display: flex;
+  padding: 16px 24px;
+  flex-direction: column;
+  gap: 16px;
+  overflow: visible;
+  border-radius: var(--border-radius-main);
+  background-color: white;
+  box-shadow: var(--box-shadow-small);
+  margin-top: 50px;
+}
+.special-vitrina .prod-image {
+  border-radius: inherit;
+  overflow: visible;
+  position: relative;
+  margin-top: -40px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+}
+.special-vitrina .product-card .prod-image img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 10 / 15;
+  border-radius: 30px;
+  position: absolute;
+  margin-top: -40px;
+}
+.special-vitrina .prod-action-btn-container {
+  display: flex;
+  flex-direction: row;
+  bottom: 10px;
+  top: auto;
 }
 /* ------------ Blog Listing Style ------------ */
 .read-more-btn {
@@ -2951,7 +2986,8 @@ pointer-events: all;
   height: auto;
   flex-direction: row;
   align-items: center;
-  padding: 32px;
+  padding: 32px 16px;
+  margin: 0;
 }
 .hero-single .hero-image {
   border-radius: var(--border-radius-big);
@@ -2969,7 +3005,7 @@ pointer-events: all;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
 }
 .hero-nav {
   position: absolute;
@@ -2987,6 +3023,15 @@ pointer-events: all;
 }
 .hero-nav .swiper-button-disabled {
   display: none;
+}
+.hero-title {
+  font-weight: 900;
+}
+.hero-title span {
+  color: var(--color-1);
+}
+.hero-single-content .btn {
+  font-size: 18px;
 }
 .swiper-slide-active .hero-single-content>*,
 .swiper-slide-active .hero-image {
@@ -3012,6 +3057,49 @@ pointer-events: all;
   animation-name: fadeInRight;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
+}
+.animation-text {
+  overflow: visible;
+  position: relative;
+  width: fit-content;
+  height: 40px;
+  display: block;
+}
+.animation-text text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: .5;
+  stroke: var(--color-1);
+  font-size: 20px;
+  font-weight: 900;
+  font-family: var(--font-header);
+  height: 40px;
+  transform: translate(0, 90%);
+}
+@keyframes stroke {
+  0% {
+    fill: var(--color-1);
+    stroke: var(--color-1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: .3;
+  }
+  40% {
+    fill: black;
+    stroke: var(--color-1);
+  }
+  80% {
+    fill: black;
+    stroke: var(--color-1);
+    stroke-width: .3;
+  }
+  100% {
+    fill: var(--color-1);
+    stroke: var(--color-1);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0; 
+  } 
 }
 /* ------------ Author Slider Style ------------ */
 .author-vitrina {
@@ -3049,4 +3137,59 @@ pointer-events: all;
   -webkit-box-orient: vertical;
   height: 160px;
   line-height: 20px;
+}
+/* ------------ Content Area Style ------------ */
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  gap: 16px;
+  padding: 16px;
+  height: 100%;
+  background: var(--gradient-transparent);
+  border: 1px solid var(--color-5);
+  border-radius: var(--border-radius-main);
+}
+.content-title {
+  display: flex;
+  margin-bottom: 32px;
+}
+.content-text {
+  width: min(100%,300px);
+  margin-top: auto;
+}
+.content-img {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 150px;
+  transition: all .4s ease-in-out;
+  -webkit-filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .3));
+}
+.content-cta .content-img {
+  top: 16px;
+}
+.content-box:hover .content-img {
+  top: -42px;
+  -webkit-filter: drop-shadow(0 60px 16px rgba(0,0,0,.5));
+  filter: drop-shadow(0 60px 16px rgba(0,0,0,.5));
+}
+/* ------------ About Area Style ------------ */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.about-content img {
+  width: 60px;
+}
+.about-img img {
+  border-radius: var(--border-radius-main);
+  box-shadow: var(--box-shadow);
+}
+.about-content lord-icon {
+  width: 60px;
+  height: 60px;
 }
