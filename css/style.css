@@ -1846,18 +1846,18 @@ footer .list-social a {
   color: black;
   height: 100%;
   flex-direction: column;
-  gap: 48px;
+  gap: 32px;
 }
 .vitrina-title .section-title {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  gap: 16px;
   flex-direction: column;
   width: 100%;
 }
 .vitrina-title .section-title lord-icon {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
 }
 .show-all-btn .slider-btn {
   display: flex;
@@ -2941,6 +2941,7 @@ pointer-events: all;
   height: auto;
   flex-direction: row;
   align-items: center;
+  padding: 32px;
 }
 .hero-single .hero-image {
   border-radius: var(--border-radius-big);
@@ -3029,4 +3030,13 @@ pointer-events: all;
   width: 100%;
   height: auto;
   aspect-ratio: 10 / 15;
+}
+.author-vitrina-content .author-vitrina-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  height: 160px;
+  line-height: 20px;
 }
