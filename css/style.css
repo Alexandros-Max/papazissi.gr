@@ -5,7 +5,7 @@
   --color-1: #c40d42;
   --color-1-light: #fff4f7;
   --color-2: #cacaca;
-  --color-3: #2c2c2c;
+  --color-3: #3b3b3b;
   --color-4: #e2e2e2;
   --color-5: #f5f5f5;
   --color-white: #ffffff;
@@ -2668,6 +2668,13 @@ pointer-events: all;
   width: 100px;
   border-radius: 100%;
   overflow: hidden;
+}
+.product-single-title {
+  max-width: 50ch;
+}
+.product-single-desc {
+  color: var(--color-3);
+  max-width: 60ch;
 }
 .authors-list {
   display: flex;
