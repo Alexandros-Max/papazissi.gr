@@ -310,41 +310,139 @@
           <div class="col-12">
             <ol class="breadcrumb-list">
               <li><a href="index.html">Αρχική</a></li>
-              <li><h1 class="current-page">Σύνδεση</h1></li>
+              <li><h1 class="current-page">Διδάσκοντες</h1></li>
             </ol>
           </div>
         </div>
       </div>
     </div>
   
-    <!-- Login Page -->
+    <!-- Text - Image Page -->
+    <section class="text-img-section section-boxed wow fadeInUp" data-wow-delay="0s">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="text-img-image">
+              <img src="images/hero-3.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="text-img-content">
+              <h2 class="h4 text-img-title">90 Χρόνια Συνεργασίας & Ακαδημαϊκής Δημιουργίας</h2>
+              <div class="text-img-text textbox">
+                <p>
+                  Στα 90 χρόνια Ιστορίας μας, έχουμε συνεργαστεί με εκατοντάδες καθηγητές ΑΕΙ κ ΤΕΙ, είτε εκδίδοντας άμεσα τα πονήματα τους, είτε με «έμμεση» συνεργασία, όπως, επιμέλειες ξένων έργων ή προτάσεων δικών μας συγγραμμάτων, σε διδασκόμενα μαθήματα.
+                  Για οποιαδήποτε τύπου συνεργασία επιθυμείτε, θα είμαστε πάντα δίπλα σας κατανοώντας τις ανάγκες σας και προσπαθώντας να μετουσιώσουμε την διανοητική σας προσπάθεια σε έργο.
+                </p>
+                <h3 class="h5"><strong>Αντίτυπο Συγγράμματος</strong></h3>
+                <p>
+                  Σε περίπτωση που επιθυμείτε να προμηθευτείτε οποιοδήποτε δικό μας σύγγραμμα που πιστεύετε ότι θα μπορούσε να είναι είτε χρηστικό ως προς τη διδασκαλία κάποιου μαθήματος, είτε χρήσιμο για εσάς, παρακαλούμε όπως συμπληρώσετε την παρακάτω φόρμα και θα σας το αποστείλουμε δωρεάν.
+                </p>
+                <h3 class="h5"><strong>E-Learning</strong></h3>
+                <p>
+                  Οι εκδόσεις ΠΑΠΑΖΗΣΗ παρέχουν μια νέα καινοτόμα εφαρμογή για τους διδάσκοντες, με σκοπό να βοηθηθεί η διαδικασία της διδασκαλίας. Για πλήρη πρόσβαση στο νέο e-learning μας, παρακαλώ συμπληρώστε το αντίστοιχο πεδίο και την φόρμα, ώστε να σας αποστείλουμε κωδικούς εισόδου.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Form Section -->
     <section class="account-page wow fadeInUp" data-wow-delay="0s">
       <div class="container-fluid">
         <div class="row align-items-center justify-content-center">
-          <div class="col-12 col-md-8 col-xl-6 col-xxl-4">
+          <div class="col-12 col-md-10 col-xl-8 col-xxl-6">
             <div class="form-container section-boxed">
               <div class="section-title">
-                <lord-icon src="https://cdn.lordicon.com/ugzybkbe.json" trigger="morph" target=".row" stroke="bold" colors="primary:#000000,secondary:#c40d42"></lord-icon>
-                <h2 class="h4">Είσοδος στον Λογαριασμό σας</h2>
+                <div class="h4">Στοιχεία Διδάσκοντα</div>
               </div>
               <div class="account-form">
   
                 <!-- login form -->
                 <form action="#" method="post" class="common-form">
                   <div class="row">
-                    <div class="col-lg-12">
+                    
+                    <div class="col-lg-6">
+                      <!-- name -->
+                      <div class="form-single">
+                        <label for="name">Ονομα <sup>*</sup></label>
+                        <input type="text" name="name" class="input-style" id="name" placeholder="π.χ. Μιχάλης, Άννα" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <!-- name -->
+                      <div class="form-single">
+                        <label for="surname">Επώνυμο <sup>*</sup></label>
+                        <input type="text" name="surname" class="input-style" id="surname" placeholder="π.χ. Αντωνίου" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
                       <!-- email -->
                       <div class="form-single">
                         <label for="email">Email <sup>*</sup></label>
-                        <input type="email" name="email" class="input-style" id="email" placeholder="Email">
+                        <input type="email" name="email" class="input-style" id="email" placeholder="π.χ. info@gmail.com" required>
                       </div>
                     </div>
-                    <div class="col-lg-12">
+                    
+                    <div class="col-lg-6">
+                      <!-- name -->
+                      <div class="form-single">
+                        <label for="cat">Αγαπημένη Κατηγορία</label>
+                        <div class="custom-select input-style">
+                          <select name="cat">
+                            <option value="0" disabled selected>Επιλέξτε κατηγορία</option>
+                            <option value="1">Γενικά</option>
+                            <option value="2">Επιστήμες του Ανθρώπου</option>
+                            <option value="3">Θετικές Επιστήμες</option>
+                            <option value="4">Κοινωνικές Επιστήμες</option>
+                            <option value="5">Οικονομικά</option>
+                            <option value="6">Παιδαγωγικά</option>
+                            <option value="7">ILS</option>
+                            <option value="8">Βιογραφίες</option>
+                            <option value="9">Λεξικά</option>
+                            <option value="10">Εγκυκλοπαίδειες</option>
+                            <option value="11">Λευκώματα</option>
+                            <option value="12">eBooks</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <!-- phone -->
+                      <div class="form-single">
+                        <label for="tel_mobile">Κινητό Τηλέφωνο <sup>*</sup></label>
+                        <input type="tel" name="tel_mobile" class="input-style" id="tel_mobile" placeholder="π.χ. 6987654321" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <!-- phone -->
+                      <div class="form-single">
+                        <label for="tel">Σταθερό Τηλέφωνο</label>
+                        <input type="tel" name="tel" class="input-style" id="tel" placeholder="π.χ. 2107654321" >
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
                       <!-- password -->
                       <div class="form-single">
                         <label for="upass">Συνθηματικό <sup>*</sup></label>
+                        <span class="form-note">
+                          <span class="form-note-btn">
+                            <svg class="open-note"  viewBox="0 0 640 640" fill="currentColor"><path d="M272 112C272 85.5 293.5 64 320 64C346.5 64 368 85.5 368 112C368 138.5 346.5 160 320 160C293.5 160 272 138.5 272 112zM224 256C224 238.3 238.3 224 256 224L320 224C337.7 224 352 238.3 352 256L352 512L384 512C401.7 512 416 526.3 416 544C416 561.7 401.7 576 384 576L256 576C238.3 576 224 561.7 224 544C224 526.3 238.3 512 256 512L288 512L288 288L256 288C238.3 288 224 273.7 224 256z"/></svg>
+                            <svg class="close-note" viewBox="0 0 640 640" fill="currentColor"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>
+                          </span>
+                          <div class="form-note-input">
+                            <ul>
+                              <li class="mb-1">Τουλάχιστον 8 <b>χαρακτήρες</b>.</li>
+                              <li class="mb-1">Τουλάχιστον ένα κεφαλαίο και ένα πεζό <b>γράμμα</b>.</li>
+                              <li>Τουλάχιστον ένα <b>σύμβολο</b>.</li>
+                            </ul>
+                          </div>
+                        </span>
                         <div class="pass-input">
-                          <input name="upass" id="upass" class="input-style" type="password" placeholder="********">
+                          <input name="upass" id="upass" class="input-style" type="password" placeholder="********" required>
                           <div class="pass-icon">
                             <div class="pass-icon-hide">
                               <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -362,9 +460,122 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-12">
-                      <!-- forgot password -->
+                    <div class="col-lg-6">
+                      <!-- password re-->
+                      <div class="form-single">
+                        <label for="upassre">Επαλήθευση συνθηματικού <sup>*</sup></label>
+                        <div class="pass-input">
+                          <input name="upassre" id="upassre" class="input-style" type="password" placeholder="********" required>
+                          <div class="pass-icon">
+                            <div class="pass-icon-hide">
+                              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                                <line x1="1" y1="1" x2="23" y2="23"></line>
+                              </svg>
+                            </div>
+                            <div class="pass-icon-show">
+                              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    <div class="col-lg-6">
+                      <!-- Address -->
+                      <div class="form-single">
+                        <label for="address">Διεύθυνση <sup>*</sup></label>
+                        <input type="text" name="address" class="input-style" id="address" placeholder="π.χ. Αθηνάς 35">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <!-- City -->
+                      <div class="form-single">
+                        <label for="city">Πόλη <sup>*</sup></label>
+                        <input type="text" name="city" class="input-style" id="city" placeholder="π.χ. Αθήνα">
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <!-- name -->
+                          <div class="form-single">
+                            <label for="postalcode">Τ.Κ. <sup>*</sup></label>
+                            <span class="form-note">
+                              <span class="form-note-btn">
+                                <svg class="open-note"  viewBox="0 0 640 640" fill="currentColor"><path d="M272 112C272 85.5 293.5 64 320 64C346.5 64 368 85.5 368 112C368 138.5 346.5 160 320 160C293.5 160 272 138.5 272 112zM224 256C224 238.3 238.3 224 256 224L320 224C337.7 224 352 238.3 352 256L352 512L384 512C401.7 512 416 526.3 416 544C416 561.7 401.7 576 384 576L256 576C238.3 576 224 561.7 224 544C224 526.3 238.3 512 256 512L288 512L288 288L256 288C238.3 288 224 273.7 224 256z"/></svg>
+                                <svg class="close-note" viewBox="0 0 640 640" fill="currentColor"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>
+                              </span>
+                              <span class="form-note-input">Εισάγετε τον Ταχυδρομικό Κώδικα για να <b>συμπληρωθούν αυτόματα η χώρα, ο νομός και η περιοχή σας</b>. Βεβαιωθείτε ότι ο Ταχυδρομικός Κώδικας είναι σωστός για να διασφαλίσετε ακριβή στοιχεία. <b>Η περιοχή εμφανίζεται ως λίστα</b> με διαθέσιμες επιλογές που αντιστοιχούν στον ΤΚ που εισάγατε.</span>
+                            </span>
+                            <input type="text" name="postalcode" class="input-style" id="postalcode" placeholder="π.χ. 123 45">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <!-- name -->
+                          <div class="form-single">
+                            <label for="country">Χώρα <sup>*</sup></label>
+                            <span class="form-note">
+                              <span class="form-note-btn">
+                                <svg class="open-note"  viewBox="0 0 640 640" fill="currentColor"><path d="M272 112C272 85.5 293.5 64 320 64C346.5 64 368 85.5 368 112C368 138.5 346.5 160 320 160C293.5 160 272 138.5 272 112zM224 256C224 238.3 238.3 224 256 224L320 224C337.7 224 352 238.3 352 256L352 512L384 512C401.7 512 416 526.3 416 544C416 561.7 401.7 576 384 576L256 576C238.3 576 224 561.7 224 544C224 526.3 238.3 512 256 512L288 512L288 288L256 288C238.3 288 224 273.7 224 256z"/></svg>
+                                <svg class="close-note" viewBox="0 0 640 640" fill="currentColor"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>
+                              </span>
+                              <span class="form-note-input">Αν βρίσκεστε σε άλλη χώρα, για παραγγελίες παρακαλώ επικοινωνήστε μαζί μας</span>
+                            </span>
+                            <div class="form-special-input input-style not-allowed">
+                              <span class="country-name"></span>
+                            </div>
+                            <input type="hidden" name="country" class="input-style" id="country" placeholder="π.χ. Ελλάδα">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <!-- name -->
+                          <div class="form-single">
+                            <label for="region">Περιοχή <sup>*</sup></label>
+                            <div class="select-input-box"></div>
+                            
+                            <div class="custom-select input-style">
+                              <select name="region" class=" region-select">
+                                <option value="0" disabled selected>Επιλέξτε περιοχή</option>
+                                <option value="49">ΑΓΙΟΣ ΔΗΜΗΤΡΙΟΣ</option>
+                                <option value="43">ΚΑΛΛΙΘΕΑ</option>
+                                <option value="44">ΜΟΣΧΑΤΟ</option>
+                              </select>
+                            </div>
+                            <input type="hidden" name="region" class="input-style" id="region" placeholder="π.χ. Νέα Σμύρνη">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <!-- name -->
+                          <div class="form-single">
+                            <label for="state">Νομός <sup>*</sup></label>
+                            <span class="form-note">
+                              <span class="form-note-btn">
+                                <svg class="open-note"  viewBox="0 0 640 640" fill="currentColor"><path d="M272 112C272 85.5 293.5 64 320 64C346.5 64 368 85.5 368 112C368 138.5 346.5 160 320 160C293.5 160 272 138.5 272 112zM224 256C224 238.3 238.3 224 256 224L320 224C337.7 224 352 238.3 352 256L352 512L384 512C401.7 512 416 526.3 416 544C416 561.7 401.7 576 384 576L256 576C238.3 576 224 561.7 224 544C224 526.3 238.3 512 256 512L288 512L288 288L256 288C238.3 288 224 273.7 224 256z"/></svg>
+                                <svg class="close-note" viewBox="0 0 640 640" fill="currentColor"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg>
+                              </span>
+                              <span class="form-note-input">Αν βρίσκεστε σε άλλη χώρα, για παραγγελίες παρακαλώ επικοινωνήστε μαζί μας</span>
+                            </span>
+                            <div class="form-special-input input-style not-allowed">
+                              <span class="state-name"></span>
+                            </div>
+                            <input type="hidden" name="state" class="input-style" id="state" placeholder="π.χ. Αττική">
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                    <div class="col-lg-12">
+                      <div class="checkbox-wrapper">
+                        <input class="inp-cbx" id="register_gdpr" type="checkbox" required/>
+                        <label class="cbx" for="register_gdpr"><span>
+                          <svg width="12px" height="10px" viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                          </svg></span><span>Αποδέχομαι τους <a href="text.html" target="_blank">όρους χρήσης</a> και την <a href="text.html" target="_blank">πολιτική προσωπικών δεδομένων</a>. </span>
+                        </label>
+                      </div>
+                    </div>  
                     <div class="col-lg-12">
                       <button class="btn" type="submit">
                         <span>Σύνδεση</span>
@@ -375,12 +586,9 @@
                       <div class="account-form-footer">
                         <div class="account-form-extra">
                           <span class="text-secondary">Δεν έχετε λογαρισμό;</span>
-                          <a href="register.html" class="">
-                            <span>Εγγραφή</span>
+                          <a href="login.html" class="">
+                            <span>Σύνδεση</span>
                           </a>
-                        </div>
-                        <div class="forgot-pass">
-                          <a href="#" target="_blank">Υπενθύμιση συνθηματικού</a>
                         </div>
                       </div>
                     </div>
@@ -394,7 +602,6 @@
         </div>
       </div>
     </section>
-
   </div>
 
 

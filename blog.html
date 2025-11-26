@@ -303,6 +303,7 @@
 
   <!-- Page Content -->
   <div class="page-content">
+  
     <!-- Breadcrumb -->
     <div class="breadcrumb">
       <div class="container-fluid">
@@ -310,90 +311,389 @@
           <div class="col-12">
             <ol class="breadcrumb-list">
               <li><a href="index.html">Αρχική</a></li>
-              <li><h1 class="current-page">Σύνδεση</h1></li>
+              <li><h1 class="current-page">Νέα</h1></li>
             </ol>
           </div>
         </div>
       </div>
     </div>
-  
-    <!-- Login Page -->
-    <section class="account-page wow fadeInUp" data-wow-delay="0s">
+
+
+    <!-- Blog Section -->
+    <section class="shop-section section-padding wow fadeInUp" data-wow-delay="0s">
       <div class="container-fluid">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-12 col-md-8 col-xl-6 col-xxl-4">
-            <div class="form-container section-boxed">
-              <div class="section-title">
-                <lord-icon src="https://cdn.lordicon.com/ugzybkbe.json" trigger="morph" target=".row" stroke="bold" colors="primary:#000000,secondary:#c40d42"></lord-icon>
-                <h2 class="h4">Είσοδος στον Λογαριασμό σας</h2>
+        <div class="row">
+          <div class="col-12 col-lg-4 col-xl-3">
+            <div class="overlay-box overlay-filters-container" id="overlayFilters">
+              <div class="overlay-head d-lg-none">
+                <div class="overlay-tilte">Φίλτρα</div>
+                <div class="overlay-close">
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </div>
               </div>
-              <div class="account-form">
-  
-                <!-- login form -->
-                <form action="#" method="post" class="common-form">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <!-- email -->
-                      <div class="form-single">
-                        <label for="email">Email <sup>*</sup></label>
-                        <input type="email" name="email" class="input-style" id="email" placeholder="Email">
-                      </div>
+              <div class="overlay-body overlay-filters">
+                <div class="filter-widget">
+                  <div class="filter-widget-title">Υποκατηγορίες</div>
+                  <div class="filter-widget-listing custom-scroll">
+                    <div class="single-filter">
+                      <a href="blog.html">Αρχείο Εκδηλώσεων</a>
                     </div>
-                    <div class="col-lg-12">
-                      <!-- password -->
-                      <div class="form-single">
-                        <label for="upass">Συνθηματικό <sup>*</sup></label>
-                        <div class="pass-input">
-                          <input name="upass" id="upass" class="input-style" type="password" placeholder="********">
-                          <div class="pass-icon">
-                            <div class="pass-icon-hide">
-                              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
-                                <line x1="1" y1="1" x2="23" y2="23"></line>
-                              </svg>
-                            </div>
-                            <div class="pass-icon-show">
-                              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                                <circle cx="12" cy="12" r="3"></circle>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="single-filter">
+                      <a href="blog.html">Επικείμενες Εκδηλώσεις</a>
                     </div>
-                    <div class="col-lg-12">
-                      <!-- forgot password -->
-                    </div>
-                    <div class="col-lg-12">
-                      <button class="btn" type="submit">
-                        <span>Σύνδεση</span>
-                      </button>
-                    </div>
-                    <div class="col-12">
-                      <!-- register -->
-                      <div class="account-form-footer">
-                        <div class="account-form-extra">
-                          <span class="text-secondary">Δεν έχετε λογαρισμό;</span>
-                          <a href="register.html" class="">
-                            <span>Εγγραφή</span>
-                          </a>
-                        </div>
-                        <div class="forgot-pass">
-                          <a href="#" target="_blank">Υπενθύμιση συνθηματικού</a>
-                        </div>
-                      </div>
+                    <div class="single-filter">
+                      <a href="blog.html">Συνεντεύξεις και Άρθρα</a>
                     </div>
                   </div>
-                  
-                </form>
-  
+                </div>
+                <div class="filter-widget">
+                  <div class="filter-widget-title">Tags</div>
+                  <div class="filter-widget-listing tag-filters">
+                    <div class="single-filter">
+                      <input id="filter-3-option-1" type="checkbox"/>
+                      <label for="filter-3-option-1">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                    <div class="single-filter">
+                      <input id="filter-3-option-2" type="checkbox"/>
+                      <label for="filter-3-option-2">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                    <div class="single-filter">
+                      <input id="filter-3-option-3" type="checkbox"/>
+                      <label for="filter-3-option-3">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                    <div class="single-filter">
+                      <input id="filter-3-option-4" type="checkbox"/>
+                      <label for="filter-3-option-4">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                    <div class="single-filter">
+                      <input id="filter-3-option-5" type="checkbox"/>
+                      <label for="filter-3-option-5">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                    <div class="single-filter">
+                      <input id="filter-3-option-6" type="checkbox"/>
+                      <label for="filter-3-option-6">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                    <div class="single-filter">
+                      <input id="filter-3-option-7" type="checkbox"/>
+                      <label for="filter-3-option-7">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                    <div class="single-filter">
+                      <input id="filter-3-option-8" type="checkbox"/>
+                      <label for="filter-3-option-8">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                    <div class="single-filter">
+                      <input id="filter-3-option-9" type="checkbox"/>
+                      <label for="filter-3-option-9">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                    <div class="single-filter">
+                      <input id="filter-3-option-10" type="checkbox"/>
+                      <label for="filter-3-option-10">
+                        <span>Όνομα tag</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8 col-xl-9">
+            <div class="shop-topbar d-flex">
+              <div class="filter-btn-toggle d-lg-none">
+                <a href="javascript:void(0);" class="btn overlay-btn" rel="overlayFilters">
+                  <span>Φίλτρα</span>
+                </a>
+              </div>
+            </div>
+            <div class="row shop-product-listing mt-lg-0">
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Παναγιώτης Ρουμελιώτης | Παρουσίαση βιβλίου “Τεχνητή Νοημοσύνη”">
+                      <img src="images/blog-1.jpg" alt="Παναγιώτης Ρουμελιώτης | Παρουσίαση βιβλίου “Τεχνητή Νοημοσύνη">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Επικείμενες Εκδηλώσεις</a>
+                    <a href="blog-details.html" class="prod-title" title="Παναγιώτης Ρουμελιώτης | Παρουσίαση βιβλίου “Τεχνητή Νοημοσύνη”">Παναγιώτης Ρουμελιώτης | Παρουσίαση βιβλίου “Τεχνητή Νοημοσύνη”</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Eavesdropping on the diplomats: Cyprus 50 years after (ekathimerini.com)">
+                      <img src="images/blog-2.jpg" alt="Eavesdropping on the diplomats: Cyprus 50 years after (ekathimerini.com)">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Συνεντεύξεις και Άρθρα</a>
+                    <a href="blog-details.html" class="prod-title" title="Eavesdropping on the diplomats: Cyprus 50 years after (ekathimerini.com)">Eavesdropping on the diplomats: Cyprus 50 years after (ekathimerini.com)</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Γωγώ Ανζολετάκη | Εγκαίνια Εικαστικής Έκθεσης και Παρουσίαση βιβλίου">
+                      <img src="images/blog-3.jpg" alt="Γωγώ Ανζολετάκη | Εγκαίνια Εικαστικής Έκθεσης και Παρουσίαση βιβλίου">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Επικείμενες Εκδηλώσεις</a>
+                    <a href="blog-details.html" class="prod-title" title="Γωγώ Ανζολετάκη | Εγκαίνια Εικαστικής Έκθεσης και Παρουσίαση βιβλίου">Γωγώ Ανζολετάκη | Εγκαίνια Εικαστικής Έκθεσης και Παρουσίαση βιβλίου</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Νίκος Κωνσταντινίδης – Αληθινή Αγάπη | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">
+                      <img src="images/blog-4.jpg" alt="Νίκος Κωνσταντινίδης – Αληθινή Αγάπη | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Αρχείο Εκδηλώσεων</a>
+                    <a href="blog-details.html" class="prod-title" title="Νίκος Κωνσταντινίδης – Αληθινή Αγάπη | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">Νίκος Κωνσταντινίδης – Αληθινή Αγάπη | Παρουσίαση βιβλίου στην ΕΣΗΕΑ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Karl Loewenstein-Ο Εισηγητής της Μαχόμενης Δημοκρατίας | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">
+                      <img src="images/blog-5.jpg" alt="Karl Loewenstein-Ο Εισηγητής της Μαχόμενης Δημοκρατίας | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Αρχείο Εκδηλώσεων</a>
+                    <a href="blog-details.html" class="prod-title" title="Karl Loewenstein-Ο Εισηγητής της Μαχόμενης Δημοκρατίας | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">Karl Loewenstein-Ο Εισηγητής της Μαχόμενης Δημοκρατίας | Παρουσίαση βιβλίου στην ΕΣΗΕΑ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Εκθέσεις Εμπειρογνωμόνων για την Πολιτική Υγείας στην Ελλάδα | Παρουσίαση βιβλίου στο Ηράκλειο">
+                      <img src="images/blog-6.jpg" alt="Εκθέσεις Εμπειρογνωμόνων για την Πολιτική Υγείας στην Ελλάδα | Παρουσίαση βιβλίου στο Ηράκλειο">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Αρχείο Εκδηλώσεων</a>
+                    <a href="blog-details.html" class="prod-title" title="Εκθέσεις Εμπειρογνωμόνων για την Πολιτική Υγείας στην Ελλάδα | Παρουσίαση βιβλίου στο Ηράκλειο">Εκθέσεις Εμπειρογνωμόνων για την Πολιτική Υγείας στην Ελλάδα | Παρουσίαση βιβλίου στο Ηράκλειο</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Χρήστος Μπήτσικας: συνέντευξη στην Κωνσταντίνα Δρακουλάκου">
+                      <img src="images/blog-7.jpg" alt="Χρήστος Μπήτσικας: συνέντευξη στην Κωνσταντίνα Δρακουλάκου">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Συνεντεύξεις και Άρθρα</a>
+                    <a href="blog-details.html" class="prod-title" title="Χρήστος Μπήτσικας: συνέντευξη στην Κωνσταντίνα Δρακουλάκου">Χρήστος Μπήτσικας: συνέντευξη στην Κωνσταντίνα Δρακουλάκου</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Κωνσταντίνος Παπαγεωργίου: Ξεχνάμε ότι η ζωή δεν είναι δεδομένη">
+                      <img src="images/blog-8.jpg" alt="Κωνσταντίνος Παπαγεωργίου: Ξεχνάμε ότι η ζωή δεν είναι δεδομένη">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Συνεντεύξεις και Άρθρα</a>
+                    <a href="blog-details.html" class="prod-title" title="Κωνσταντίνος Παπαγεωργίου: Ξεχνάμε ότι η ζωή δεν είναι δεδομένη">Κωνσταντίνος Παπαγεωργίου: Ξεχνάμε ότι η ζωή δεν είναι δεδομένη</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Παναγιώτης Ρουμελιώτης | Παρουσίαση βιβλίου “Τεχνητή Νοημοσύνη”">
+                      <img src="images/blog-1.jpg" alt="Παναγιώτης Ρουμελιώτης | Παρουσίαση βιβλίου “Τεχνητή Νοημοσύνη">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Επικείμενες Εκδηλώσεις</a>
+                    <a href="blog-details.html" class="prod-title" title="Παναγιώτης Ρουμελιώτης | Παρουσίαση βιβλίου “Τεχνητή Νοημοσύνη”">Παναγιώτης Ρουμελιώτης | Παρουσίαση βιβλίου “Τεχνητή Νοημοσύνη”</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Eavesdropping on the diplomats: Cyprus 50 years after (ekathimerini.com)">
+                      <img src="images/blog-2.jpg" alt="Eavesdropping on the diplomats: Cyprus 50 years after (ekathimerini.com)">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Συνεντεύξεις και Άρθρα</a>
+                    <a href="blog-details.html" class="prod-title" title="Eavesdropping on the diplomats: Cyprus 50 years after (ekathimerini.com)">Eavesdropping on the diplomats: Cyprus 50 years after (ekathimerini.com)</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Γωγώ Ανζολετάκη | Εγκαίνια Εικαστικής Έκθεσης και Παρουσίαση βιβλίου">
+                      <img src="images/blog-3.jpg" alt="Γωγώ Ανζολετάκη | Εγκαίνια Εικαστικής Έκθεσης και Παρουσίαση βιβλίου">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Επικείμενες Εκδηλώσεις</a>
+                    <a href="blog-details.html" class="prod-title" title="Γωγώ Ανζολετάκη | Εγκαίνια Εικαστικής Έκθεσης και Παρουσίαση βιβλίου">Γωγώ Ανζολετάκη | Εγκαίνια Εικαστικής Έκθεσης και Παρουσίαση βιβλίου</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Νίκος Κωνσταντινίδης – Αληθινή Αγάπη | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">
+                      <img src="images/blog-4.jpg" alt="Νίκος Κωνσταντινίδης – Αληθινή Αγάπη | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Αρχείο Εκδηλώσεων</a>
+                    <a href="blog-details.html" class="prod-title" title="Νίκος Κωνσταντινίδης – Αληθινή Αγάπη | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">Νίκος Κωνσταντινίδης – Αληθινή Αγάπη | Παρουσίαση βιβλίου στην ΕΣΗΕΑ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Karl Loewenstein-Ο Εισηγητής της Μαχόμενης Δημοκρατίας | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">
+                      <img src="images/blog-5.jpg" alt="Karl Loewenstein-Ο Εισηγητής της Μαχόμενης Δημοκρατίας | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Αρχείο Εκδηλώσεων</a>
+                    <a href="blog-details.html" class="prod-title" title="Karl Loewenstein-Ο Εισηγητής της Μαχόμενης Δημοκρατίας | Παρουσίαση βιβλίου στην ΕΣΗΕΑ">Karl Loewenstein-Ο Εισηγητής της Μαχόμενης Δημοκρατίας | Παρουσίαση βιβλίου στην ΕΣΗΕΑ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Εκθέσεις Εμπειρογνωμόνων για την Πολιτική Υγείας στην Ελλάδα | Παρουσίαση βιβλίου στο Ηράκλειο">
+                      <img src="images/blog-6.jpg" alt="Εκθέσεις Εμπειρογνωμόνων για την Πολιτική Υγείας στην Ελλάδα | Παρουσίαση βιβλίου στο Ηράκλειο">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Αρχείο Εκδηλώσεων</a>
+                    <a href="blog-details.html" class="prod-title" title="Εκθέσεις Εμπειρογνωμόνων για την Πολιτική Υγείας στην Ελλάδα | Παρουσίαση βιβλίου στο Ηράκλειο">Εκθέσεις Εμπειρογνωμόνων για την Πολιτική Υγείας στην Ελλάδα | Παρουσίαση βιβλίου στο Ηράκλειο</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3">
+                <div class="product-card blog-card">
+                  <div class="prod-image">
+                    <a href="blog-details.html" title="Χρήστος Μπήτσικας: συνέντευξη στην Κωνσταντίνα Δρακουλάκου">
+                      <img src="images/blog-7.jpg" alt="Χρήστος Μπήτσικας: συνέντευξη στην Κωνσταντίνα Δρακουλάκου">
+                    </a>
+                    <div class="read-more-btn">
+                      <div class="btn"><span>Περισσότερα</span></div>
+                    </div>
+                  </div>
+                  <div class="prod-content">
+                    <a href="blog.html" class="prod-sku">Συνεντεύξεις και Άρθρα</a>
+                    <a href="blog-details.html" class="prod-title" title="Χρήστος Μπήτσικας: συνέντευξη στην Κωνσταντίνα Δρακουλάκου">Χρήστος Μπήτσικας: συνέντευξη στην Κωνσταντίνα Δρακουλάκου</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shop-footer">
+              <div class="pagination-container ms-md-auto">
+                <a href="#" class="single-pagenation">
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+                </a>
+                <a href="#" class="single-pagenation">
+                  1
+                </a>
+                <a href="#" class="single-pagenation active-page">
+                  2
+                </a>
+                <a href="#" class="single-pagenation">
+                  3
+                </a>
+                <a href="#" class="single-pagenation">
+                  ...
+                </a>
+                <a href="#" class="single-pagenation">
+                  <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="13 17 18 12 13 7"></polyline><polyline points="6 17 11 12 6 7"></polyline></svg>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
   </div>
 
@@ -4186,9 +4486,10 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/jquery.fancybox.js"></script>
+  <script src="js/select-custom.js"></script>
   <script src="js/wow.min.js"></script><!--delete if not needed-->
   <script src="js/jquery.zoom.min.js"></script><!--delete if not needed-->
-  <script src="js/wnumb.js"></script>
+  <script src="js/wNumb.js"></script>
   <script src="js/nouislider.min.js"></script>
   <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
