@@ -2072,7 +2072,7 @@ footer .list-social a {
   text-align: left;
   margin-bottom: 8px;
 }
-.form-container .form-single label sup {
+.form-container sup {
   color: var(--color-1);
 }
 .form-container .pass-input{
