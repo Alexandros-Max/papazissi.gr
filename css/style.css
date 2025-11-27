@@ -3222,6 +3222,11 @@ pointer-events: all;
   align-items: flex-start;
   gap: 16px;
 }
+.common-title-desc img {
+  margin-top: 16px;
+  border-radius: var(--border-radius-main);
+  box-shadow: var(--box-shadow);
+}
 /* ------------ Blog Page Style ------------ */
 .filter-widget-listing.tag-filters {
   max-height: unset;
