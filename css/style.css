@@ -2072,6 +2072,9 @@ footer .list-social a {
   text-align: left;
   margin-bottom: 8px;
 }
+.form-container .form-single label sup {
+  color: var(--color-1);
+}
 .form-container .pass-input{
   width: 100%;
 }
@@ -2231,6 +2234,9 @@ pointer-events: all;
 }
 .select-items div:hover, .same-as-selected {
   color: var(--color-1);
+}
+.form-container .btn.btn-danger {
+  height: 50px;
 }
 @media screen  and (max-width:1599px){
   .form-container {
@@ -3209,6 +3215,12 @@ pointer-events: all;
 .double-row {
   height: 100%;
   gap: 16px 0;
+}
+.common-title-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
 }
 /* ------------ Blog Page Style ------------ */
 .filter-widget-listing.tag-filters {
