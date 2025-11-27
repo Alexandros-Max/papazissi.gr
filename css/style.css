@@ -2004,6 +2004,7 @@ footer .list-social a {
 }
 /* ------------ Form Style ------------ */
 .form-container {
+  width: 100%;
   padding-left: 32px;
   padding-right: 32px;
   display: flex;
