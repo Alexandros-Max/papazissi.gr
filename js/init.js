@@ -12,8 +12,10 @@
         $('.zoom-image-hover').zoom();
     }
 
+
+    
     // Hero Slider INIT
-    var swiper = new Swiper(".hero-swiper", {
+    var swiper = new Swiper(".hero-section-2 .hero-swiper", {
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
@@ -22,6 +24,21 @@
         prevEl: ".hero-prev",
       },
     });
+
+
+
+    // Hero Slider INIT
+    var swiper = new Swiper(".hero-section-1 .hero-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      navigation: {
+        nextEl: ".hero-next",
+        prevEl: ".hero-prev",
+      },
+    });
+
+
 
     // Author Slider INIT
     var swiper = new Swiper(".author-vitrina", {
