@@ -41,6 +41,28 @@
       },
     });
 
+    
+    // Author Slider INIT
+    var swiper = new Swiper(".photo-gallery", {
+      slidesPerView: 4,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: ".gallery-next",
+        prevEl: ".gallery-prev",
+      },
+      breakpoints: {
+          0: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+      },
+    });
+
 
     // Search Filters INIT
     var swiper = new Swiper(".search-filters .swiper", {

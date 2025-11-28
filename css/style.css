@@ -3258,10 +3258,47 @@ pointer-events: all;
   flex-wrap: wrap;
   width: 100%;
 }
-.blog-image {
+.blog-image,
+.photo-gallery-container img {
   border-radius: var(--border-radius-main);
   box-shadow: var(--box-shadow);
   overflow: hidden;
+}
+.blog-image-with-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+.photo-gallery-container {
+  padding: 16px;
+  margin: 16px -16px;
+  overflow: clip;
+  position: relative;
+}
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+.gallery-nav .swiper-button-next, 
+.gallery-nav .swiper-button-prev {
+  background-color: var(--color-5);
+  border-color: transparent;
+  transition: all .4s ease-in-out;
+}
+.gallery-nav .swiper-button-next:hover, 
+.gallery-nav .swiper-button-prev:hover {
+  background-color: var(--color-1);
+  border-color: transparent;
+  color: white;
 }
 /* ------------Text - Image Area Style ------------ */
 .text-img-content {
