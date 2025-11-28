@@ -3338,3 +3338,107 @@ pointer-events: all;
   height: 600px;
   margin: -6px;
 }
+/* ------------ Catalogue Filters Style ------------ */
+.series-filter {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-size: 16px; 
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+.series-filter a,
+.series-filter button {
+  position: relative;
+  padding: 0 20px;
+}
+.series-filter button {
+  color: black;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.series-filter button.is--active {
+  color: var(--color-1);
+}
+.series-filter a:first-child,
+.series-filter button:first-child  {
+  padding-left: 0;
+}
+.series-filter a:not(:first-child)::after,
+.series-filter button:not(:first-child)::after {
+  content: '';
+  width: 2px;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  display: block;
+  background-color: black;
+  opacity: .2;
+}
+.series-source-linklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.filter-item {
+  width: calc(20% - 16px);  
+  position: relative;
+  padding: 16px;
+  background: var(--gradient-transparent);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-main);
+}
+.filter-item-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.filter-item-inner .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.series-filter button.is-disable,
+.filter-item.is-disable {
+  display: none !important;
+}
+@media (max-width: 1499px) {
+  .filter-item {
+    width: calc(25% - 16px);
+  }
+  .series-filter a, 
+  .series-filter button {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 1199px) {
+
+  .filter-item {
+    width: calc(33.33% - 16px);
+  }
+  .series-filter {
+    font-size: 14px;
+  }
+  .series-filter a, 
+  .series-filter button {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 991px) {
+  .filter-item {
+    width: calc(350% - 16px);
+  }
+}
+@media (max-width: 767px) {
+  .filter-item {
+    width: 100%;
+  }
+}

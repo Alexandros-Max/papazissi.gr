@@ -169,6 +169,28 @@
         });
     };
     
+
+
+
+    /* Series Filter
+    -------------------------------------------------------------------------*/
+    var filterTab = function () {
+        var $btnFilter = $('.btns-filter').click(function() {
+        if (this.id == 'all') {
+            $('#parent > div').show();
+        } else {
+            var $el = $('.' + this.id).show();
+            $('#parent > div').not($el).hide();
+        }
+        $btnFilter.removeClass('is--active');
+        $(this).addClass('is--active');
+        })
+    };
+    filterTab();
+
+
+
+
     if($(".product-quantity").length) productQuantity(".product-quantity");
     
     
