@@ -6,6 +6,7 @@
     }
 
 
+
     /*== Product Image Zoom ==*/
     function isTouchEnabled() { return !!document.createTouch; }
     if ($('.zoom-image-hover').length && (isTouchEnabled) && ($(window).outerWidth() > 1199)) {

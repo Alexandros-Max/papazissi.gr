@@ -602,6 +602,77 @@ section{
     width: 50%;
   }
 }
+/* ------------ Scroll top CSS ------------ */
+#scroll-top {
+  position: fixed;
+  bottom: -20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: var(--color-1);
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  box-shadow: var(--box-shadow);
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#scroll-top.active{
+  opacity: 1;
+  visibility: visible;
+  bottom: 20px;
+}
+#scroll-top lord-icon {
+  width: 24px;
+  height: 24px;
+}
+@media all and (min-width: 768px) and (max-width: 1199px) {
+  #scroll-top.active {
+    bottom: 100px;
+  }
+}
+/* ------------ Scroll top CSS ------------ */
+.loader-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 99999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader-screen.loaded {
+  display: none;
+}
+.loader {
+  height: 80px;
+  aspect-ratio: 1;
+  padding: 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+  mask: conic-gradient(#000 0 0) content-box exclude,conic-gradient(#000 0 0);
+  filter: blur(12px);
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(#0000 0 5%, var(--color-1),#0000 20% 50%);
+  animation: l2 1.5s linear infinite;
+}
+@keyframes l2 {
+  to {rotate: 1turn}
+}
 /* ------------ Header CSS ------------ */
 /* Header CSS - Topbar */
 .topbar {
@@ -3052,17 +3123,38 @@ pointer-events: all;
   pointer-events: none;
   transition: all .4s ease-in-out;
 }
+.hero-nav .swiper-button-next, 
+.hero-nav .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+}
 .hero-nav .swiper-button-disabled {
   display: none;
 }
 .hero-title {
   font-weight: 900;
+  background: -webkit-linear-gradient(-45deg, #680421, var(--color-1));
+  background: linear-gradient(-45deg, #680421, var(--color-1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
 }
 .hero-title span {
   color: var(--color-1);
 }
 .hero-single-content .btn {
   font-size: 18px;
+}
+.show-all-btn.hero-btn .slider-btn {
+  color: black;
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  gap: 8px;
+}
+.show-all-btn.hero-btn .slider-btn lord-icon{
+  width: 32px;
+  height: 32px;
 }
 .swiper-slide-active .hero-single-content>*,
 .swiper-slide-active .hero-image {
@@ -3160,6 +3252,12 @@ pointer-events: all;
 .hero-section-2 .hero-single-content div {
   color: white;
 }
+.hero-section-2 .hero-single-content .hero-title {
+  background: unset;
+  background: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
 .hero-section-2 .hero-single .hero-image {
   width: auto;
   flex: 1 1 auto;
@@ -3171,7 +3269,7 @@ pointer-events: all;
   color: white;
   border: 2px solid white;
 }
-.swiper-slide-active .hero-single-content>* {
+.hero-section-2 .swiper-slide-active .hero-single-content>* {
   -webkit-animation-name: unset;
     animation-name: unset;
     -webkit-animation-delay: unset;

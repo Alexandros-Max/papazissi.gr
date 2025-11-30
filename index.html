@@ -23,6 +23,12 @@
 
 <body>
 
+  <!-- Pre Loader -->
+  <div class="loader-screen">
+    <div class="loader"></div>
+  </div>
+
+
   <!-- Header -->
   <header>
     <!-- Header Top bar -->
@@ -313,19 +319,21 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a href="#" class="hero-single row">
-                    <div class="col-md-6 col-xl-6">
+                    <div class="col-md-6 col-xl-4">
                       <div class="hero-single-content">
-                        <svg class="title animation-text" viewbox="0 0 176 37">
-                          <text x="0" y="0">ΝΕΕΣ ΚΥΚΛΟΦΟΡΙΕΣ</text>
-                        </svg>
                         <div class="h1 hero-title text-black">Περιηγηθείτε στην Πλήρη Βιβλιοθήκη μας</div>
                         <div class="h4 hero-text text-black">Σύντομο κείμενο κεντρικού Banner Αρχικής σελίδας</div>
-                        <div class="btn"><span>Περισσότερα</span></div>
+                        <div class="show-all-btn hero-btn">
+                          <div class="slider-btn">
+                            Περισσότερα
+                            <lord-icon src="https://cdn.lordicon.com/qeryyuli.json" trigger="loop-on-hover" state="hover-slide" target="a" stroke="bold" colors="primary:#000000"></lord-icon>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-6 col-xl-6">
+                    <div class="col-md-6 col-xl-8">
                       <div class="hero-image">
-                        <img src="images/hero-3.jpg" alt="">
+                        <img src="images/hero-1.jpg" alt="">
                         
                       </div>
                     </div>
@@ -333,16 +341,22 @@
                 </div>
                 <div class="swiper-slide">
                   <a href="#" class="hero-single row">
-                    <div class="col-md-6 col-xl-6">
+                    <div class="col-md-6 col-xl-4">
                       <div class="hero-single-content">
-                        <div class="h1 hero-title text-black">Τίλτος κεντρικού Banner Αρχικής σελίδας</div>
+                        <div class="h1 hero-title text-black">Περιηγηθείτε στην Πλήρη Βιβλιοθήκη μας</div>
                         <div class="h4 hero-text text-black">Σύντομο κείμενο κεντρικού Banner Αρχικής σελίδας</div>
-                        <div class="btn"><span>Περισσότερα</span></div>
+                        <div class="show-all-btn hero-btn">
+                          <div class="slider-btn">
+                            Περισσότερα
+                            <lord-icon src="https://cdn.lordicon.com/qeryyuli.json" trigger="loop-on-hover" state="hover-slide" target="a" stroke="bold" colors="primary:#000000"></lord-icon>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-6 col-xl-6">
+                    <div class="col-md-6 col-xl-8">
                       <div class="hero-image">
-                        <img src="images/hero-3.jpg" alt="">
+                        <img src="images/hero-1.jpg" alt="">
+                        
                       </div>
                     </div>
                   </a>
@@ -2198,7 +2212,10 @@
     </div>
   </footer>
 
-
+  <!-- Back to Top Button -->
+  <a href="#" id="scroll-top">    
+    <lord-icon src="https://cdn.lordicon.com/dbfbszwn.json" state="hover-slide" trigger="morph" target="a" stroke="bold" colors="primary:#ffffff"></lord-icon>
+  </a>
 
   <!-- Overlay Menu -->
   <div class="overlay-box" id="overlayMenu">

@@ -168,12 +168,11 @@
             });
         });
     };
-    
+    if($(".product-quantity").length) productQuantity(".product-quantity");
 
 
 
-    /* Series Filter
-    -------------------------------------------------------------------------*/
+   // Series Filter
     var filterTab = function () {
         var $btnFilter = $('.btns-filter').click(function() {
         if (this.id == 'all') {
@@ -191,8 +190,29 @@
 
 
 
-    if($(".product-quantity").length) productQuantity(".product-quantity");
     
+
+
     
+    // scroll to top
+    $(window).scroll(function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            $("#scroll-top").addClass('active');
+        } else {
+            $("#scroll-top").removeClass('active');
+        }
+    });
+
+    $("#scroll-top").on('click', function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+    
+
+    
+    // Preloader
+    $(window).on('load', function (event) {
+        $('.loader-screen').delay(500).addClass('loaded');
+      });
     
 })(jQuery);
