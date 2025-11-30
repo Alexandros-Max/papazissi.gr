@@ -2552,7 +2552,7 @@ pointer-events: all;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 8px;
   margin-bottom: 16px;
 }
 .product-single-title {
