@@ -2551,6 +2551,10 @@ pointer-events: all;
   max-width: 50ch;
   line-height: 1.6;
 }
+.product-single-subtitle {
+  max-width: 50ch;
+  color: var(--color-3);
+}
 .product-single-desc {
   color: var(--color-3);
   max-width: 60ch;
