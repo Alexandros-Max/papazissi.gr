@@ -3480,7 +3480,8 @@ pointer-events: all;
 .tag-filters .single-filter input {
   display: none;
 }
-.tag-filters .single-filter label{
+.tag-filters .single-filter label,
+.single-tag {
   padding: 6px 12px;
   border-radius: var(--border-radius-main);
   display: block;
@@ -3489,7 +3490,7 @@ pointer-events: all;
   transition: all .4s ease-in-out;
 }
 .tag-filters .single-filter input:checked + label,
-.tag-filters .single-filter label:hover{
+.single-tag:hover{
   background-color: var(--color-1);
   color: white;
 }
