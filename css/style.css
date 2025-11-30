@@ -3554,12 +3554,21 @@ pointer-events: all;
 .blog-invitation {
   margin-top: 32px;
 }
-.single-blog-tags .tag-filters {
+.single-blog-tags {
   display: flex;
-  flex-wrap: wrap;
+  align-items: baseline;
   margin-top: 32px;
   padding-top: 16px;
   border-top: 1px solid var(--color-4);
+  gap: 16px;
+}
+.single-blog-tags .single-blog-tags-title {
+  height: fit-content;
+  font-weight: 600;
+}
+.single-blog-tags .tag-filters {
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 /* ------------Text - Image Area Style ------------ */
