@@ -3028,9 +3028,11 @@ pointer-events: all;
   box-shadow: var(--box-shadow);
 }
 /* ------------ Blog Page Style ------------ */
-.filter-widget-listing.tag-filters {
+.tag-filters {
   max-height: unset;
+  display: flex;
   flex-flow: row wrap;
+  gap: 16px;
 }
 .tag-filters .single-filter input {
   display: none;
@@ -3044,8 +3046,12 @@ pointer-events: all;
   cursor: pointer;
   transition: all .4s ease-in-out;
 }
+.product-single-list .single-tag {
+  background-color: white;
+}
 .tag-filters .single-filter input:checked + label,
-.single-tag:hover{
+.single-tag:hover,
+.product-single-list .single-tag:hover {
   background-color: var(--color-1);
   color: white;
 }
@@ -3123,11 +3129,6 @@ pointer-events: all;
 .single-blog-tags .single-blog-tags-title {
   height: fit-content;
   font-weight: 600;
-}
-.single-blog-tags .tag-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
 }
 /* ------------Text - Image Area Style ------------ */
 .text-img-content {
