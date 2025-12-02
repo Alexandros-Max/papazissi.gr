@@ -1199,13 +1199,14 @@ footer .list-social a {
 .newsletter-box {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   width: fit-content;
   max-width: 100%;
   margin-left: auto;
 }
 .newsletter-box .footer-desc {
   max-width: 100%;
+  margin-bottom: 10px;
 }
 .form-newsletter-input {
   display: flex;
