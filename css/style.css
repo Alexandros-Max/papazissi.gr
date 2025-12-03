@@ -1896,41 +1896,6 @@ footer .list-social a {
   background-color: var(--color-3);
   color: white;
 }
-.special-vitrina .product-card {
-  display: flex;
-  padding: 16px 24px;
-  flex-direction: column;
-  gap: 16px;
-  overflow: visible;
-  border-radius: var(--border-radius-main);
-  background-color: white;
-  box-shadow: var(--box-shadow-small);
-  margin-top: 50px;
-}
-.special-vitrina .prod-image {
-  border-radius: inherit;
-  overflow: visible;
-  position: relative;
-  margin-top: -40px;
-  height: auto;
-  aspect-ratio: 3 / 4;
-  width: 100%;
-}
-.special-vitrina .product-card .prod-image img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 10 / 15;
-  border-radius: 30px;
-  position: absolute;
-  margin-top: -40px;
-}
-.special-vitrina .prod-action-btn-container {
-  display: flex;
-  flex-direction: row;
-  bottom: 10px;
-  top: auto;
-}
 /* ------------ Blog Listing Style ------------ */
 .read-more-btn {
   display: flex;
@@ -3004,6 +2969,7 @@ pointer-events: all;
   width: 120px;
   transition: all .4s ease-in-out;
   -webkit-filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .3));
+  filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .3));
 }
 .content-cta .content-img {
   top: 16px;
@@ -3169,7 +3135,7 @@ pointer-events: all;
   height: 600px;
   margin: -6px;
 }
-/* ------------ Catalogue Filters Style ------------ */
+/* ------------ Series Filters Style ------------ */
 .series-filter {
   display: flex;
   align-items: center;
@@ -3272,4 +3238,91 @@ pointer-events: all;
   .filter-item {
     width: 100%;
   }
+}
+/* ------------ Author Talks Style ------------ */
+.author-talks-area {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.author-talks-area .content-box{
+  padding: 32px;
+}
+.author-talks-area .content-img,
+.content-box:hover .content-img  {
+  position: static;
+  width: 100%;
+  padding-left: 32px;
+  -webkit-filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .3));
+  filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .3));
+}
+.author-talks-area .author-info .content-img {
+  padding-left: 0;
+  padding-right: 32px;
+}
+.author-talks-area .content-img img {
+  border-radius: 32px;
+  width: 100%;
+}
+.author-talks-area .content-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.author-talks-area .content-title {
+  width: 100%;
+}
+.author-talks-area .content-text {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.author-talks-area .show-all-btn {
+  margin-top: auto;
+}
+.video-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  background-color: var(--color-1);
+  width: fit-content;
+  border-radius: var(--border-radius-main);
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all .4s ease-in-out;
+}
+.video-btn:hover {
+  color: white;
+  background-color: var(--color-3);
+}
+.video-btn lord-icon {
+  width: 40px;
+  height: 40px;
+}
+.content-social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.content-social lord-icon {
+  width: 40px;
+  height: 40px;
+}
+.author-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+.author-talks-area .author-head .content-title {
+  width: fit-content;
+  margin: 0;
+}
+.author-talks-area .author-head .content-text {
+  margin: 0;
 }
