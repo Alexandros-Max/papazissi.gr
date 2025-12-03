@@ -3249,7 +3249,7 @@ pointer-events: all;
   padding: 32px;
 }
 .author-talks-area .content-img,
-.content-box:hover .content-img  {
+.author-talks-area .content-box:hover .content-img  {
   position: static;
   width: 100%;
   padding-left: 32px;
