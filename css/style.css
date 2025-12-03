@@ -3257,7 +3257,7 @@ pointer-events: all;
   filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .3));
 }
 .author-talks-area .author-info .content-img,
-.author-talks-area .content-box:hover .author-info .content-img  {
+.author-talks-area .author-info.content-box:hover .content-img  {
   padding-left: 0;
   padding-right: 32px;
 }
