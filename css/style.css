@@ -3327,3 +3327,8 @@ pointer-events: all;
 .author-talks-area .author-head .content-text {
   margin: 0;
 }
+.author-list-page .content-img {
+  border-radius: var(--border-radius-main);
+  overflow: hidden;
+  top: 16px;
+}
