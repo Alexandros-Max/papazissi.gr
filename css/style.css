@@ -1962,6 +1962,7 @@ footer .list-social a {
   width: 24px;
   height: 24px;
 }
+.content-title + .show-all-btn,
 .show-all-btn + .vitrina-nav {
   margin-top: auto;
 }
