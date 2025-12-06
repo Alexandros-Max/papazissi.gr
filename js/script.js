@@ -112,6 +112,13 @@
         $(this).toggleClass("active");
     });
 
+    
+    // Description show more/less text
+    $('.show-more-toggle').click(function(){
+        $(this).toggleClass("active");
+        $(this).siblings().toggleClass("active");
+    });
+
 
 
     // Overlay menu

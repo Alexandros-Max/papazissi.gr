@@ -3331,5 +3331,42 @@ pointer-events: all;
 .author-list-page .content-img {
   border-radius: var(--border-radius-main);
   overflow: hidden;
-  top: 16px;
+  position: static;    
+  width: 100%;
+  -webkit-filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .3)) !important;
+  filter: drop-shadow(0 16px 16px rgba(0, 0, 0, .3)) !important;
+}
+.author-list-page .content-box .row {
+  align-items: center;
+}
+.author-page .author-talks-area .content-text {
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.show-more-toggle {
+  margin-top: 16px;
+}
+.show-more-toggle div {
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+.show-more-toggle div:hover {
+  color: var(--color-1);
+}
+.show-more-toggle .show-less,
+.show-more-toggle.active .show-more {
+  display: none;
+}
+.show-more-toggle .show-more,
+.show-more-toggle.active .show-less {
+  display: flex;
+}
+.author-page .author-talks-area .content-text.active {
+  -webkit-line-clamp: unset;
 }
