@@ -343,6 +343,9 @@ section{
     max-width: 100%;
   }
 }
+.row {
+  width: 100%;
+}
 .textbox h2, 
 .textbox h3, 
 .textbox h4, 
