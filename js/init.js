@@ -14,18 +14,7 @@
     }
 
 
-    
-    // Hero Slider INIT
-    var swiper = new Swiper(".hero-section-2 .hero-swiper", {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      loop: true,
-      navigation: {
-        nextEl: ".hero-next",
-        prevEl: ".hero-prev",
-      },
-    });
-
+   
 
 
     // Hero Slider INIT
@@ -41,23 +30,6 @@
 
 
 
-    // Author Slider INIT
-    var swiper = new Swiper(".author-vitrina", {
-      slidesPerView: 2,
-      spaceBetween: 32,
-      navigation: {
-        nextEl: ".author-next",
-        prevEl: ".author-prev",
-      },
-      breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          1600: {
-            slidesPerView: 2,
-          },
-      },
-    });
 
     
     // Author Slider INIT
@@ -108,7 +80,7 @@
               spaceBetween: 16,
           },
       },
-    })
+    });
     const ProductSingle = new Swiper(".product-single-slide .swiper", {
       spaceBetween: 20,
       navigation: {
@@ -119,9 +91,7 @@
       thumbs: {
           swiper: ProductThumb,
       },
-    })
-
-
+    });
 
 
 
@@ -153,6 +123,40 @@
         });	
       })
     }
-    window.addEventListener('load', prodSlider)
+    window.addEventListener('load', prodSlider);
+
+
+    
+
+
+    // Author Slider INIT
+    const AuthorThumb = new Swiper(".author-vitrina-thumb-swiper", {
+      spaceBetween: 32,
+      slidesPerView: 1,
+      loop: true,
+    });
+    
+    const AuthorSingle = new Swiper(".author-vitrina", {
+      effect: "cards",
+      grabCursor: true,
+      speed: 500,
+      cardsEffect:{
+        rotate: true,
+        perSlideRotate: 5,
+        slideShadows: true,
+      },
+      mousewheel: {
+        invert: false,
+      },
+      navigation: {
+        nextEl: ".author-next",
+        prevEl: ".author-prev",
+      },
+      thumbs: {
+          swiper: AuthorThumb,
+      },
+    });
+
+
 
 })(jQuery);
