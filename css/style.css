@@ -2999,6 +2999,9 @@ pointer-events: all;
   box-shadow: var(--box-shadow);
 }
 /* ------------ Blog Page Style ------------ */
+.single-blog-detail {
+  font-size: 16px;
+}
 .tag-filters {
   max-height: unset;
   display: flex;
