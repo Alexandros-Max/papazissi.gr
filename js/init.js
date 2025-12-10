@@ -28,6 +28,8 @@
       },
     });
 
+    
+
 
 
 
@@ -157,6 +159,16 @@
       },
     });
 
+
+    // Author Slider INIT
+    var swiper = new Swiper(".author-vitrina-signle-swiper", {
+      slidesPerView: 2.4,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: ".author2-next",
+        prevEl: ".author2-prev",
+      },
+    });
 
 
 })(jQuery);
