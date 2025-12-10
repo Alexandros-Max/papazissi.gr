@@ -1589,9 +1589,6 @@ footer .list-social a {
 .menu-item + .menu-item  {
   border-top: 1px solid var(--color-4);
 }
-.menu-item.active-menu {
-  background-color: var(--color-1);
-}
 .menu-item.level-1-menu>.menu-link {
   padding: 15px 20px;
   font-size: 14px;
@@ -2058,6 +2055,7 @@ footer .list-social a {
 }
 .common-form .row{
   gap: 20px 0;
+  width: auto;
 }
 .pass-input{
   position: relative;
