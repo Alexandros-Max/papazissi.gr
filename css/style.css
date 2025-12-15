@@ -374,15 +374,19 @@ section{
 .textbox li{
     list-style: inherit;
 }
+.checkbox-wrapper {
+  margin: 16px auto 0;
+}
 .checkbox-wrapper input[type="checkbox"] {
   display: none;
   visibility: hidden;
 }
 .checkbox-wrapper .cbx {
-  margin: 16px auto 0;
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .newsletter-box .checkbox-wrapper .cbx {
   font-size: 14px;
@@ -401,6 +405,7 @@ section{
 .checkbox-wrapper .cbx span:first-child {
   position: relative;
   width: 18px;
+  min-width: 18px;
   height: 18px;
   border-radius: 3px;
   transform: scale(1);
