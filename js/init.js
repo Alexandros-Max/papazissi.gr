@@ -59,11 +59,14 @@
     // Search Filters INIT
     var swiper = new Swiper(".search-filters .swiper", {
       slidesPerView: "auto",
-      spaceBetween: 10,
+      spaceBetween: 24,
       navigation: {
         nextEl: ".search-next",
         prevEl: ".search-prev",
       },
+          1200: {
+            spaceBetween: 8,
+          },
     });
 
 
@@ -104,8 +107,8 @@
       let nextArrow = document.querySelectorAll('.vitrina-next')
       prodSliders.forEach((slider, index)=>{
         const swiper = new Swiper(slider, {
-          slidesPerView: 1.2,
-          spaceBetween: 25,
+          slidesPerView: 1.1,
+          spaceBetween: 16,
           navigation: {
             // the 'index' bit below is just the order of the class in the queryselectorAll array, so the first one would be NextArrow[0] etc
             nextEl: nextArrow[index],
@@ -113,12 +116,16 @@
           },
           breakpoints: {
             768: {
-              slidesPerView: 3,
+              slidesPerView: 3.2,
+              spaceBetween: 24,
+            },
+            1200: {
+              slidesPerView: 4,
             },
             1400: {
               slidesPerView: 4,
             },
-            1400: {
+            1800: {
               slidesPerView: 5,
             },
           }
@@ -128,46 +135,25 @@
     window.addEventListener('load', prodSlider);
 
 
-    
-
-
-    // Author Slider INIT
-    const AuthorThumb = new Swiper(".author-vitrina-thumb-swiper", {
-      spaceBetween: 32,
-      slidesPerView: 1,
-      loop: true,
-    });
-    
-    const AuthorSingle = new Swiper(".author-vitrina", {
-      effect: "cards",
-      grabCursor: true,
-      speed: 500,
-      cardsEffect:{
-        rotate: true,
-        perSlideRotate: 5,
-        slideShadows: true,
-      },
-      mousewheel: {
-        invert: false,
-      },
-      navigation: {
-        nextEl: ".author-next",
-        prevEl: ".author-prev",
-      },
-      thumbs: {
-          swiper: AuthorThumb,
-      },
-    });
-
+  
 
     // Author Slider INIT
     var swiper = new Swiper(".author-vitrina-signle-swiper", {
-      slidesPerView: 2.4,
-      spaceBetween: 32,
+      slidesPerView: 1.1,
+      spaceBetween: 16,
       navigation: {
         nextEl: ".author2-next",
         prevEl: ".author2-prev",
       },
+      breakpoints: {
+        768: {
+          slidesPerView: 1.2,
+          spaceBetween: 32,
+        },
+        1200: {      
+          slidesPerView: 2.2,
+        },
+      }
     });
 
 
