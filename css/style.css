@@ -321,15 +321,13 @@ section{
     max-width: calc(100% - 32px);
   }
   .section-boxed {
+    margin: 60px auto;
     padding-top: 40px;
     padding-bottom: 40px;
   }
   .section-padding{
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-  .section-boxed {
-    margin: 60px auto;
   }
   .content-section .container-fluid,
   .section-padding .container-fluid {
@@ -341,7 +339,7 @@ section{
 
 }
 @media screen  and (max-width:767px){
-  .section-boxed {
+  .section-boxed:not(.form-container,.product-info) {
     border-radius: 0;
     box-shadow: none;
   }
@@ -2078,15 +2076,26 @@ footer .list-social a {
 }
 .breadcrumb-list {
   display: flex;
-  gap: 10px;
+  gap: 16px;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: -8px;
+}
+.breadcrumb-list::-webkit-scrollbar {
+  height: 2px;
+}
+.breadcrumb-list li {
+  width: fit-content;
 }
 .breadcrumb-list li a{
   position: relative;
+  white-space: nowrap;
 }
 .breadcrumb-list li a::after{
   content: '>';
   position: relative;
-  right: -5px;
+  right: -8px;
 }
 .current-page {
   font-size: inherit;
@@ -2094,6 +2103,7 @@ footer .list-social a {
   line-height: inherit;
   font-family: inherit;
   font-weight: inherit;
+  white-space: nowrap;
 }
 /* ------------ Form Style ------------ */
 .form-container {
@@ -2340,6 +2350,10 @@ pointer-events: all;
   }
 }
 @media screen  and (max-width:767px){
+  .account-page .container-fluid,
+  .form-page .container-fluid {
+    max-width: 100%;
+}
 
 }
 /* ------------ Product Page Style ------------ */
@@ -2524,6 +2538,7 @@ pointer-events: all;
   display: flex;
   width: 100%;
   margin-bottom: 16px;
+  border: none;
 }
 .nav-tabs .nav-link {
   border: none;
@@ -2683,6 +2698,11 @@ pointer-events: all;
 .popup-inner-text {
   padding: 16px;
 }
+@media screen  and (max-width:1199px){
+  .product-info {
+    padding: 24px;
+  }
+}
 @media screen  and (max-width:767px){
   .product-single-list li {
     flex-direction: column;
@@ -2691,6 +2711,40 @@ pointer-events: all;
     width: 100%;
     min-width: 100%;
     max-width: 100%;
+  }
+  .product-single-image {
+    gap: 24px;
+    padding: 24px;
+  }
+  .product-single-content {
+    padding: 0;
+  }
+  .product-single-qty {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .nav-tabs {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+  }
+  .nav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-tabs::-webkit-scrollbar-track {
+    display: none;
+    background: transparent;
+  }
+  .product-info {
+    padding: 16px;
+    border-radius: var(--border-radius-big) !important;
+    box-shadow: var(--box-shadow) !important;
+  }
+  .nav-tabs .nav-link {
+    padding: 0px 16px 8px;
+    background-color: transparent;
   }
 }
 /* ------------ Shop Page Style ------------ */
@@ -2723,9 +2777,15 @@ pointer-events: all;
   background-color: var(--color-1);
   pointer-events: none;
 }
+.shop-topbar {
+  gap: 16px;
+}
+.filter-btn-toggle .btn {
+  height: 50px;
+}
 .sort-container {
   width: 200px;
-  height: 40px;
+  height: 50px;
 }
 .overlay-filters-container .overlay-body {
   padding: 20px;
@@ -2852,6 +2912,11 @@ pointer-events: all;
   }
   .overlay-filters-container .overlay-body {
     max-height: unset;
+  }
+}
+@media screen and (max-width:767px){
+  .filter-btn-toggle {
+    flex: 1;
   }
 }
 /* ------------ Hero Slider Style ------------ */
@@ -3163,6 +3228,10 @@ pointer-events: all;
   .content-section .row {
     gap: 32px 0;
   }
+  .content-box {
+    padding: 24px;
+    gap: 16px;
+  }
 }
 @media screen and (max-width: 767px) {
   .content-img {
@@ -3238,6 +3307,9 @@ pointer-events: all;
   overflow: clip;
   position: relative;
 }
+.photo-gallery .swiper-wrapper {
+  align-items: center;
+}
 .gallery-nav {
   position: absolute;
   top: 50%;
@@ -3277,6 +3349,25 @@ pointer-events: all;
 .single-blog-tags .single-blog-tags-title {
   height: fit-content;
   font-weight: 600;
+}
+@media screen and (max-width:1599px) {
+  .blog-meta-container {
+    padding: 32px;
+  }
+}
+@media screen and (max-width:1199px) {
+  .blog-meta-container {
+    padding: 24px;
+}
+}
+@media screen and (max-width:991px) {
+  .blog-meta-container {
+    padding: 32px;
+    margin: 0 auto 32px;
+  }
+}
+@media screen and (max-width:767px) {
+  
 }
 /* ------------Text - Image Area Style ------------ */
 .text-img-content {
