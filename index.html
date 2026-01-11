@@ -65,8 +65,16 @@
         <div class="row align-items-center">
           <div class="logo-header">
             <a href="index.html" title="Εκδόσεις Παπαζήση">
-              <img src="images/logo1_gr.svg" alt="Εκδόσεις Παπαζήση">
+              <img src="images/logo1_gr.svg" alt="Εκδόσεις Παπαζήση" class="d-none d-md-block">
+              <img src="images/logo1_gr_mobile.svg" alt="Εκδόσεις Παπαζήση" class="d-md-none">
             </a>
+            <div class="header-action-item d-xl-none">
+              <div class="menu-btn overlay-btn" rel="overlayMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
           </div>
           <div class="desktop-menu d-none d-xl-flex">
             <div class="sec-menu-btn overlay-btn" rel="overlayMenu">
@@ -240,13 +248,6 @@
             </div>
           </div>
           <div class="header-actions ms-auto">
-              <div class="header-action-item d-xl-none">
-                <div class="menu-btn overlay-btn" rel="overlayMenu">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
               <div class="header-action-item">
                 <a class="search-btn overlay-btn" rel="overlaySearch" href="javascript:void(0)" title="Αναζήτηση">
                   <lord-icon src="https://cdn.lordicon.com/wjyqkiew.json" state="hover-rotation" trigger="morph" target="a" stroke="bold" colors="primary:#000000,secondary:#c40d42" class="open-search"></lord-icon>
@@ -258,11 +259,13 @@
                     <lord-icon src="https://cdn.lordicon.com/kdduutaw.json" state="hover-looking-around" trigger="morph" target="a" stroke="bold" colors="primary:#000000,secondary:#c40d42"></lord-icon>
                   </a>
               </div>
+              <!--
               <div class="header-action-item">
                   <a class="account-btn overlay-btn" rel="overlayAccount" href="javascript:void(0)" title="Ο λογαριασμός μου">
                     <lord-icon src="https://cdn.lordicon.com/ugzybkbe.json" state="hover-looking-around" trigger="morph" target="a" stroke="bold" colors="primary:#000000,secondary:#c40d42"></lord-icon>
                   </a>
               </div>
+               -->
               <div class="header-action-item">
                   <a class="cart-btn overlay-btn" rel="overlayCart" href="javascript:void(0)" title="Καλάθι αγορών">
                     <lord-icon src="https://cdn.lordicon.com/dhyweudu.json" trigger="morph" target="a" stroke="bold" colors="primary:#000000,secondary:#c40d42"></lord-icon>

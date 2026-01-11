@@ -775,6 +775,9 @@ section{
 }
 .logo-header {
   width: auto;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 .logo-header img {
   width: 200px;
@@ -795,32 +798,41 @@ section{
 .header-action-item>* {
   display: block;
 }
+.logo-header .header-action-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: var(--color-1);
+  padding: 8px;
+}
 .header-action-item .menu-btn {
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
-  height: 28px;
-  width: 26px;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
 }
 .header-action-item .menu-btn span {
-  width: 26px;
+  width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   display: block;
   border-radius: 4px;
   transition: all .4s ease-in-out; 
 }
 .header-action-item .menu-btn span:nth-child(2) {
-  width: 16px;
+  width: 60%;
 }
 .header-action-item .menu-btn:hover span {
-  width: 16px;
+  width: 60%;
 }
 .header-action-item .menu-btn:hover span:nth-child(2) {
-  width: 26px;
-  background-color: var(--color-1);
+  width: 100%;
 }
 .desktop-menu {
   width: auto;
@@ -1111,20 +1123,31 @@ section{
     padding-bottom: 5px;
   }
   .logo-header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
+    gap: 16px;
+  }
+  .logo-header img {
+    width: 48px;
+  }
+  .header-action-item {
+    margin-top: 12px;
+  }
+  .logo-header .header-action-item {
+    width: 32px;
+    height: 32px;
+    padding: 7px;
+    margin: 0;
   }
   .header-actions {
-    justify-content: space-around;
-    width: 100%;
-    padding: 0 32px;
+    width: fit-content;
+    gap: 12px;
+    padding-left: 0;
   }
   .lang-selector {
-    padding: 10px 0;
+    padding: 0;
   }
   .navibar .container-fluid {
-    padding-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }
 /* ------------ Footer style ------------ */
@@ -1453,7 +1476,7 @@ footer .list-social a {
   flex-direction: column;
   gap: 20px;
   position: relative;
-  border-top: 1px solid var(--color-2);
+  border-top: 1px solid var(--color-4);
 }
 .cart-sum {
   width: 100%;
@@ -1481,7 +1504,7 @@ footer .list-social a {
   display: flex;
   align-items: center;
   width: 100%;
-  border-top: 1px solid var(--color-2);
+  border-top: 1px solid var(--color-4);
   padding: 20px 0 10px;
 }
 .shipping-time .dz-icon {
@@ -2672,14 +2695,30 @@ pointer-events: all;
   border: 2px solid var(--color-1);
   cursor: default;
 }
-.product-single-sicoprav .custom-select {
-  width: 200px;
+.product-swatch__group input {
+  display: none;
 }
-.product-single-sicoprav .custom-select .select-selected,
-.product-single-sicoprav .custom-select .select-items div {
+.product-swatch__group label {
   display: flex;
   align-items: center;
   gap: 4px;
+  padding: 8px 16px 8px 12px;
+  border: 2px solid var(--color-4);
+  border-radius: var(--border-radius-main);
+  transition: all .4s ease-in-out;
+}
+.product-swatch__group label:hover {
+  cursor: pointer;
+  border-color: black;
+}
+.product-swatch__group input:checked + label {
+  border-color: var(--color-1);
+}
+.product-swatch__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
 }
 .index-button-container {
   display: flex;
@@ -3591,6 +3630,7 @@ pointer-events: all;
   flex-wrap: wrap;
   margin-bottom: 32px;
   justify-content: space-between;
+  gap: 16px 0;
 }
 .author-talks-area .author-head .content-title {
   width: fit-content;
@@ -3609,6 +3649,7 @@ pointer-events: all;
 }
 .author-list-page .content-box .row {
   align-items: center;
+  gap: 24px 0;
 }
 .author-page .author-talks-area .content-text {
   margin-bottom: 0;
@@ -3640,4 +3681,45 @@ pointer-events: all;
 }
 .author-page .author-talks-area .content-text.active {
   -webkit-line-clamp: unset;
+}
+@media screen and (max-width:991px) {
+  .author-talks-area .content-img, 
+  .author-talks-area .content-box:hover .content-img {
+    padding-right: 0;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width:767px) {
+  .author-list-page .content-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .author-list-page .content-box .row {
+    flex-direction: column-reverse;
+  }
+  .author-head {
+    margin-top: 32px;
+  }
+  .author-talks-area .author-head .content-title {
+    width: 100%;
+    text-align: center;
+  }
+  .author-talks-area .author-info .content-img, 
+  .author-talks-area .author-info.content-box:hover .content-img {
+    padding-right: 0;
+    margin-top: 0;
+  }
+  .content-social lord-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .author-talks-area .content-img, 
+  .author-talks-area .content-box:hover .content-img {
+    padding-left: 0;
+    margin-top: 32px;
+  }
+  .author-head {
+    margin-top: 0;
+  }
 }
