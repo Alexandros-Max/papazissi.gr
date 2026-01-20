@@ -2110,6 +2110,7 @@ footer .list-social a {
 }
 .breadcrumb-list li {
   width: fit-content;
+  white-space: nowrap;
 }
 .breadcrumb-list li a{
   position: relative;
@@ -2573,6 +2574,7 @@ pointer-events: all;
   color: black;
   font-family: var(--font-header);
   background-color: transparent;
+  white-space: nowrap;
 }
 .nav-tabs .nav-link.active {
   border-color: var(--color-1);
