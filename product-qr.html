@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="el">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Document Title -->
+  <title>Εκδόσεις Παπαζήση</title>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="author" content="Εκδόσεις Παπαζήση">
+
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css"><!--delete if not needed-->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body class="qr-page">
+
+  <!-- Pre Loader -->
+   <div class="loader-screen">
+    <div class="loader"></div>
+   </div>
+
+  <!-- Header -->
+  <header>
+    <!-- Header Navigation bar -->
+    <div class="navibar">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12 col-md-3 col-xl-2">
+            <div class="d-flex py-3  justify-content-center">
+              <img src="images/logo1_gr.svg" alt="Εκδόσεις Παπαζήση">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Page Content -->
+  <div class="page-content">
+  
+    <style>
+      .product-single-image {
+        padding: 24px;
+      } 
+      .product-single-image img{
+        border-radius: 16px;
+      }
+      .product-single-tab-inner.files {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 16px;
+        width: 100%;
+      }
+      .files .single-file {
+        width: calc(16.66% - 14px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 16px;
+        padding: 24px 8px;
+        font-size: 16px;
+        font-weight: 500;
+        gap: 8px;
+        text-align: center;
+      }
+      .files .single-file lord-icon {
+        width: 48px;
+        height: 48px;
+      }
+      .files .single-img {
+        width: calc(16.66% - 14px);
+      }
+      .files .single-img img {
+        border-radius: 8px;
+        width: 100%;
+      }
+      @media screen and (max-width:1199px){
+        .files .single-file,
+        .files .single-img {
+          width: calc(20% - 14px);
+        }
+      }
+      @media screen and (max-width:768px){
+        .files .single-file,
+        .files .single-img {
+          width: calc(25% - 14px);
+        }
+      }
+      @media screen and (max-width:575px){
+        .files .single-file,
+        .files .single-img {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <!-- Product Section -->
+    <section class="product-section section-padding wow fadeInUp" data-wow-delay="0s">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-xl-3">
+            <div class="product-single-image">
+              <a href="images/book-1.jpg" data-fancybox="prod-gallery" class="single-slide zoom-image-hover">
+                <img class="img-responsive" src="images/book-1.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-6">
+            <div class="product-single-content">
+              <div class="product-single-title-section">
+                <h1 class="product-single-title h4">Λόγια Αγάπης</h1>
+              </div>
+              <div class="product-single-desc textbox">
+                <p>There are many variations of passages of
+                  Lorem Ipsum available, but the majority have suffered alteration
+                  in some form, by injected humour, or randomised words which
+                  don't look even slightly believable. If you are going to use a
+                  passage of Lorem Ipsum, you need to be sure there isn't anything
+                  embarrassing hidden in the middle of text. All the Lorem Ipsum
+                  generators on the Internet tend to repeat predefined chunks as
+                  necessary.
+                </p>
+              </div>
+              <ul class="product-single-list">
+                <li><strong>Συγγραφείς:</strong><span>Δήμητρα Κουμπάρου, Δήμητρα Κουμπάρου, Δήμητρα Κουμπάρου, Δήμητρα Κουμπάρου</span></li>
+                <li><strong>Επιστ. επιμέλεια:</strong><span>Δήμητρα Κουμπάρου, Δήμητρα Κουμπάρου, Δήμητρα Κουμπάρου, Δήμητρα Κουμπάρου</span></li>
+                <li><strong>Έτος τρέχουσας έκδοσης:</strong> <span>2024</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-12 col-xl-9">
+            <div class="section-boxed product-info">
+              <div class="product-single-tab-wrapper">
+                <div class="product-single-tab-nav">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="video-tab"
+                        data-bs-toggle="tab" data-bs-target="#tab-nav-video"
+                        type="button" role="tab" aria-controls="tab-nav-video"
+                        aria-selected="true">Βίντεο</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="slides-tab" data-bs-toggle="tab"
+                        data-bs-target="#tab-nav-slides" type="button" role="tab"
+                        aria-controls="tab-nav-slides"
+                        aria-selected="false">Διαφάνειες</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="images-tab" data-bs-toggle="tab"
+                        data-bs-target="#tab-nav-images" type="button" role="tab"
+                        aria-controls="tab-nav-images"
+                        aria-selected="false">Εικόνες</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sound-tab" data-bs-toggle="tab"
+                        data-bs-target="#tab-nav-sound" type="button" role="tab"
+                        aria-controls="tab-nav-sound"
+                        aria-selected="false">Ηχητικά</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="word-tab" data-bs-toggle="tab"
+                        data-bs-target="#tab-nav-word" type="button" role="tab"
+                        aria-controls="tab-nav-word"
+                        aria-selected="false">Αρχεία Word</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pdf-tab" data-bs-toggle="tab"
+                        data-bs-target="#tab-nav-pdf" type="button" role="tab"
+                        aria-controls="tab-nav-pdf"
+                        aria-selected="false">Αρχεία PDF</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="epub-tab" data-bs-toggle="tab"
+                        data-bs-target="#tab-nav-epub" type="button" role="tab"
+                        aria-controls="tab-nav-epub"
+                        aria-selected="false">Αρχεία E-pub</button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content product-single-tab-content">
+                  <div id="tab-nav-video" class="tab-pane fade show active">
+                    <div class="product-single-tab-inner files">
+                      <a data-fancybox href="https://papazissi.gr/wp-content/uploads/2023/05/1a.mp4" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/lfuaxldl.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#ffffff,secondary:#c40d42"></lord-icon>
+                        Τίτλος βίντεο
+                      </a>
+                      <a data-fancybox href="https://papazissi.gr/wp-content/uploads/2023/05/1a.mp4" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/lfuaxldl.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#ffffff,secondary:#c40d42"></lord-icon>
+                        Τίτλος βίντεο
+                      </a>
+                      <a data-fancybox href="https://papazissi.gr/wp-content/uploads/2023/05/1a.mp4" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/lfuaxldl.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#ffffff,secondary:#c40d42"></lord-icon>
+                        Τίτλος βίντεο
+                      </a>
+                      <a data-fancybox href="https://papazissi.gr/wp-content/uploads/2023/05/1a.mp4" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/lfuaxldl.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#ffffff,secondary:#c40d42"></lord-icon>
+                        Τίτλος βίντεο
+                      </a>
+                      <a data-fancybox href="https://papazissi.gr/wp-content/uploads/2023/05/1a.mp4" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/lfuaxldl.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#ffffff,secondary:#c40d42"></lord-icon>
+                        Τίτλος βίντεο
+                      </a>
+                    </div>
+                  </div>
+                  <div id="tab-nav-slides" class="tab-pane fade">
+                    <div class="product-single-tab-inner files">
+                      <a  data-fancybox="prod-slides" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-slides" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-slides" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-slides" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-slides" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-slides" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div id="tab-nav-sound" class="tab-pane fade">
+                    <div class="product-single-tab-inner files">
+                      <a href="media/logia-agapis.mp3" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/pwpeakpm.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#3b3b3b,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="media/logia-agapis-afigisi.mp3" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/pwpeakpm.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#3b3b3b,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="media/logia-agapis-afigisi.mp3" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/pwpeakpm.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#3b3b3b,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="media/logia-agapis-afigisi.mp3" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/pwpeakpm.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#3b3b3b,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="media/logia-agapis-afigisi.mp3" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/pwpeakpm.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#3b3b3b,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                    </div>
+                  </div>
+                  <div id="tab-nav-images" class="tab-pane fade">
+                    <div class="product-single-tab-inner files">
+                      <a  data-fancybox="prod-images" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-images" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-images" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-images" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-images" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-images" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-images" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                      <a  data-fancybox="prod-images" href="images/prod-1.jpg" class="single-img">
+                        <img class="img-responsive" src="images/prod-1.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                  <div id="tab-nav-word" class="tab-pane fade">
+                    <div class="product-single-tab-inner files">
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/nrxpgzkp.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/nrxpgzkp.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/nrxpgzkp.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/nrxpgzkp.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/nrxpgzkp.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                    </div>
+                  </div>
+                  <div id="tab-nav-pdf" class="tab-pane fade">
+                    <div class="product-single-tab-inner files">
+                      <a href="media/testpdf.pdf" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/qqnjbvch.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="media/testpdf.pdf" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/qqnjbvch.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="media/testpdf.pdf" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/qqnjbvch.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="media/testpdf.pdf" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/qqnjbvch.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="media/testpdf.pdf" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/qqnjbvch.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                    </div>
+                  </div>
+                  <div id="tab-nav-epub" class="tab-pane fade">
+                    <div class="product-single-tab-inner files">
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/iuqyhlid.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/iuqyhlid.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/iuqyhlid.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/iuqyhlid.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                      <a href="#" target="_blank" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/iuqyhlid.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#f5f5f5,secondary:#c40d42"></lord-icon>
+                        Τίτλος αρχείου
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+  <!-- Overlay Account -->
+  <div class="overlay-box overlay-center" id="overlayBookIndex">
+    <div class="overlay-head">
+      <div class="overlay-title">Περιεχόμενα</div>
+      <div class="overlay-close">
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+    </div>
+    <div class="overlay-body account-body custom-scroll">
+      <div class="popup-inner-text textbox">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+          Lorem Ipsum has been the industry's standard dummy text ever
+          since the
+          1500s, when an unknown printer took a galley of type and
+          scrambled it to
+          make a type specimen book. It has survived not only five
+          centuries, but also
+          the leap into electronic typesetting, remaining essentially
+          unchanged.
+        </p>
+        <ul>
+          <li>Any Product types that You want - Simple, Configurable</li>
+          <li>Downloadable/Digital Products, Virtual Products</li>
+          <li>Inventory Management with Backordered items</li>
+          <li>Flatlock seams throughout.</li>
+        </ul>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+          Lorem Ipsum has been the industry's standard dummy text ever
+          since the
+          1500s, when an unknown printer took a galley of type and
+          scrambled it to
+          make a type specimen book. It has survived not only five
+          centuries, but also
+          the leap into electronic typesetting, remaining essentially
+          unchanged.
+        </p>
+        <p>There are many variations of passages of Lorem Ipsum available,
+          but the
+          majority have
+          suffered alteration in some form, by injected humour, or
+          randomised words
+          which don't
+          look even slightly believable. If you are going to use a passage
+          of Lorem
+          Ipsum,
+          you need to be sure there isn't anything embarrassing hidden in
+          the middle
+          of text.
+          All the Lorem Ipsum generators on the Internet tend to repeat
+          predefined
+          chunks as necessary,
+          making this the first true generator on the Internet. It uses a
+          dictionary
+          of over
+          200 Latin words, combined with a handful of model sentence
+          structures, to
+          generate
+          Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
+          therefore
+          always
+          free from repetition, injected humour, or non-characteristic
+          words etc.
+        </p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+          Lorem Ipsum has been the industry's standard dummy text ever
+          since the
+          1500s, when an unknown printer took a galley of type and
+          scrambled it to
+          make a type specimen book. It has survived not only five
+          centuries, but also
+          the leap into electronic typesetting, remaining essentially
+          unchanged.
+        </p>
+        <ul>
+          <li>Any Product types that You want - Simple, Configurable</li>
+          <li>Downloadable/Digital Products, Virtual Products</li>
+          <li>Inventory Management with Backordered items</li>
+          <li>Flatlock seams throughout.</li>
+        </ul>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+          Lorem Ipsum has been the industry's standard dummy text ever
+          since the
+          1500s, when an unknown printer took a galley of type and
+          scrambled it to
+          make a type specimen book. It has survived not only five
+          centuries, but also
+          the leap into electronic typesetting, remaining essentially
+          unchanged.
+        </p>
+        <p>There are many variations of passages of Lorem Ipsum available,
+          but the
+          majority have
+          suffered alteration in some form, by injected humour, or
+          randomised words
+          which don't
+          look even slightly believable. If you are going to use a passage
+          of Lorem
+          Ipsum,
+          you need to be sure there isn't anything embarrassing hidden in
+          the middle
+          of text.
+          All the Lorem Ipsum generators on the Internet tend to repeat
+          predefined
+          chunks as necessary,
+          making this the first true generator on the Internet. It uses a
+          dictionary
+          of over
+          200 Latin words, combined with a handful of model sentence
+          structures, to
+          generate
+          Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is
+          therefore
+          always
+          free from repetition, injected humour, or non-characteristic
+          words etc.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+
+  
+  
+  <!-- JavaScripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/wow.min.js"></script><!--delete if not needed-->
+  <script src="js/jquery.zoom.min.js"></script><!--delete if not needed-->
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+
+  <!-- Init Scripts-->
+  <script src="js/init.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
