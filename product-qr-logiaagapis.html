@@ -85,6 +85,12 @@
         border-radius: 8px;
         width: 100%;
       }
+      .single-audio {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+      }
       @media screen and (max-width:1199px){
         .files .single-file,
         .files .single-img {
@@ -121,9 +127,14 @@
               <div class="product-single-title-section">
                 <h1 class="product-single-title h4">Λόγια Αγάπης</h1>
               </div>
+              <div class="product-single-desc textbox">
+                <p>
+                  Μπορεί να είναι αργός, αλλά η καρδιά του πάει …γρήγορα στην αγάπη!Ο μικρός μας ήρωας, ένα χελωνάκι γεμάτο καλοσύνη, πληγώνεται όταν τα ζώα του δάσους τον απορρίπτουν επειδή δεν μπορεί να τρέξει όπως εκείνα. Μα η σοφή αγκαλιά της μαμάς του τού θυμίζει κάτι πολύ σημαντικό: ότι κάθε πλάσμα είναι μοναδικό και έχει τα δικά του χαρίσματα.Και όταν η ζωή φέρνει μια δυσκολία στο δάσος, ποιος είναι εκεί για να τα βοηθήσει; Το ίδιο χελωνάκι που περιγελούσαν. Τότε τα ζώα καταλαβαίνουν το λάθος τους. Ζητούν συγγνώμη και του προσφέρουν αυτό που του άξιζε από την αρχή: σεβασμό, καλοσύνη και φιλία.Μια τρυφερή ιστορία για το bulling, την αποδοχή, τη σημασία της συγγνώμης και τη δύναμη των λέξεων στη προσχολική ηλικία. Γιατί το να είσαι διαφορετικός… είναι το πιο μεγάλο σου δώρο.
+                </p>
+              </div>
               <ul class="product-single-list">
-                <li><strong>Συγγραφείς:</strong><span>Αθηνά Αρχοντούλη Φιλιπποπούλου</span></li>
-                <li><strong>Εικονογράφιση:</strong><span>Γιώργος Αρχοντούλης</span></li>
+                <li><strong>Συγγραφέας/είς:</strong><span>Αθηνά Αρχοντούλη Φιλιπποπούλου</span></li>
+                <li><strong>Εικονογράφηση:</strong><span>Γιώργος Αρχοντούλης</span></li>
               </ul>
             </div>
           </div>
@@ -138,19 +149,39 @@
                         aria-controls="tab-nav-sound"
                         aria-selected="true">Ηχητικά</button>
                     </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="video-tab" data-bs-toggle="tab"
+                        data-bs-target="#tab-nav-video" type="button" role="tab"
+                        aria-controls="tab-nav-video"
+                        aria-selected="false">Βίντεο</button>
+                    </li>
                   </ul>
                 </div>
                 <div class="tab-content product-single-tab-content">
                   <div id="tab-nav-sound" class="tab-pane fade show active">
                     <div class="product-single-tab-inner files">
-                      <audio controls="" class="audio-player">
-                        <source src="media/logia-agapis-afigisi.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
-                      <audio controls="" class="audio-player">
-                        <source src="media/logia-agapis.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                      </audio>
+                      <div class="single-audio">
+                        Ακούστε το τραγούδι του παραμυθιού:
+                        <audio controls="" class="audio-player">
+                          <source src="media/logia-agapis-afigisi.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                        </audio>
+                      </div>
+                      <div class="single-audio">
+                        Ακούστε την αφήγηση του παραμυθιού:
+                        <audio controls="" class="audio-player">
+                          <source src="media/logia-agapis.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                        </audio>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab-nav-video" class="tab-pane fade">
+                    <div class="product-single-tab-inner files">
+                      <a data-fancybox href="https://youtu.be/pdBXuC5c7hE?si=016SgWkd-KYRQ_mf" class="single-file">
+                        <lord-icon src="https://cdn.lordicon.com/lfuaxldl.json" trigger="loop-on-hover" target="a" stroke="bold" colors="primary:#ffffff,secondary:#c40d42"></lord-icon>
+                        Γεώργιος Αρχοντούλης - Λόγια Αγάπης
+                      </a>
                     </div>
                   </div>
                 </div>
