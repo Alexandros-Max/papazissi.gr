@@ -9,11 +9,12 @@
         }
     });
 
-
+    console.log($(window).outerHeight());
+    console.log($('body').outerHeight());
     // Header Sticky
     $(window).bind('scroll', function () {
-        if (($('body').outerHeight()) > ($(window).outerHeight() + 150)){
-            if ($(window).scrollTop() > 130) {
+        if (($('body').outerHeight()) > ($(window).outerHeight())){
+            if ($(window).scrollTop() > 100) {
                 $('.navibar').addClass('is-sticky');
             } else {
                 $('.navibar').removeClass('is-sticky');
@@ -22,6 +23,8 @@
             $('.navibar').removeClass('is-sticky');
         }
     });
+
+    
 
     // Overlays activation
     let $overlayActive = '';
@@ -160,22 +163,22 @@
     const productQuantity = (selector) => {
         $(selector).each(function() {
             const $element = $(this);
-            const $quantityInput = $element.find(".quantity-input");
-            $element.find(".quantity-input").on("click", (e) => {
+            const $quantityInput = $element.find(".qty-input");
+            $element.find(".qty-input").on("click", (e) => {
                 e.preventDefault();
             });
-            $element.find(".increase").on("click", (e) => {
+            $element.find(".inc").on("click", (e) => {
                 e.preventDefault();
                 $quantityInput.val((i, val) => +val + 1);
             });
     
-            $element.find(".decrease").on("click", (e) => {
+            $element.find(".dec").on("click", (e) => {
                 e.preventDefault();
                 $quantityInput.val((i, val) => (val > 1 ? val - 1 : val));
             });
         });
     };
-    if($(".product-quantity").length) productQuantity(".product-quantity");
+    if($(".qty-plus-minus").length) productQuantity(".qty-plus-minus");
 
 
 

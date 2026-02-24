@@ -1867,6 +1867,10 @@ footer .list-social a {
   font-weight: 500;
   font-size: 16px;
 }
+.multi-variants .prod-price {
+  justify-content: flex-start;
+  margin-top: 16px;
+}
 .prod-availability {
   font-size: 14px;
 }
@@ -2498,6 +2502,24 @@ pointer-events: all;
   width: 260px;
   min-width: min(100%,260px);
   max-width: 100%;
+}
+.product-single-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-1);
+}
+.product-single-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-1);
+}
+.product-single-list a:hover {
+  color: var(--color-3);
+}
+.product-single-list svg {
+  width: 16px;
 }
 .availability-yes {
   color: var(--color-green);
@@ -3557,6 +3579,9 @@ pointer-events: all;
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+.author-talks-area .row {
+  width: 100%;
 }
 .author-talks-area .content-box{
   padding: 32px;
