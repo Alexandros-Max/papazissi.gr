@@ -9,21 +9,20 @@
         }
     });
 
-    console.log($(window).outerHeight());
-    console.log($('body').outerHeight());
     // Header Sticky
-    $(window).bind('scroll', function () {
-        if (($('body').outerHeight()) > ($(window).outerHeight())){
-            if ($(window).scrollTop() > 100) {
-                $('.navibar').addClass('is-sticky');
-            } else {
-                $('.navibar').removeClass('is-sticky');
-            }
+    const canStick = $('body').outerHeight() > ($(window).outerHeight() + 200);
+
+    $(window).on('scroll', function () {
+    
+        if (!canStick) return;
+    
+        if ($(this).scrollTop() > 100) {
+            $('.navibar').addClass('is-sticky');
         } else {
             $('.navibar').removeClass('is-sticky');
         }
+    
     });
-
     
 
     // Overlays activation
